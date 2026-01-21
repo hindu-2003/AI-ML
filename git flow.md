@@ -1,3 +1,4 @@
+0. git pull
 1. git status
 2. git add .
 3. git status

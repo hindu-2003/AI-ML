@@ -1,0 +1,17 @@
+1. Direct Assignment (Preferred):
+
+    X['Age'] = X['Age'].fillna(X['Age'].mean())
+
+2. Using median instead of mean (for robustness):
+
+   X['Age'] = X['Age'].fillna(X['Age'].median())
+
+3. Multiple columns approach:
+
+   X.fillna({'Age': X['Age'].mean()}, inplace=True)
+   
+4. For machine learning pipelines, consider scikit-learn's SimpleImputer:
+
+from sklearn.impute import SimpleImputer
+imputer = SimpleImputer(strategy='mean')
+X[['Age']] = imputer.fit_transform(X[['Age']])

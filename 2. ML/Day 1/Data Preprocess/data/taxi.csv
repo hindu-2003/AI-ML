@@ -1,0 +1,11 @@
+Zone,Time,DayType
+Airport,Morning,Weekday
+Stadium,Evening,Weekend
+Tech Park,Afternoon,Weekend
+Suburbs,Evening,Weekend
+Downtown,Night,Weekday
+Tech Park,Morning,
+Downtown,Morning,Weekday
+Stadium,Night,Weekday
+Suburbs,Evening,Weekday
+Airport,Afternoon,Weekday
