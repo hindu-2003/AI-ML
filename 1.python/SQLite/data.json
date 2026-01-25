@@ -1,0 +1,10 @@
+{
+    "company": "VCube",
+    "location": "Bangalore",
+    "technologies": [
+        "C",
+        "Java",
+        "Python"
+    ],
+    "founded_year": 2010
+}

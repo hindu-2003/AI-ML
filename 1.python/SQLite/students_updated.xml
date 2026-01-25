@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<students>
+    <student id="1">
+        <name>Ravi</name>
+        <course>Data Science</course>
+        <marks>92</marks>
+    </student>
+    <student id="2">
+        <name>Anita</name>
+        <course>AI</course>
+        <marks>90</marks>
+    </student>
+<student id="3"><name>Kiran</name><course>Machine Learning</course><marks>88</marks></student></students>

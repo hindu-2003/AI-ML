@@ -1,0 +1,12 @@
+<students>
+    <student id="1">
+        <name>Ravi</name>
+        <course>Data Science</course>
+        <marks>85</marks>
+    </student>
+    <student id="2">
+        <name>Anita</name>
+        <course>AI</course>
+        <marks>90</marks>
+    </student>
+</students>
