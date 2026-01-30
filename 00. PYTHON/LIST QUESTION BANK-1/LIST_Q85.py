@@ -1,0 +1,14 @@
+# LIST_Q85.py
+#85. Write a Python program to create a multidimensional list (lists of lists) with zeros. 
+# Multidimensional list: [[0, 0], [0, 0], [0, 0]]
+
+def multidimensional(d, value=0):
+	if len(d)==1:
+		return [value,value]
+	else:
+		return 
+# Main Program
+list = [int(input('Enter a number for dimension:').split())]
+[op] = multidimensional(list)
+
+print([op])

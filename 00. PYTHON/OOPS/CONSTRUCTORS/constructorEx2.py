@@ -1,0 +1,14 @@
+#constructorEx2.py
+class Student:
+	def __init__(self,x,y,z):
+		self.name = x
+		self.sno = y
+		self.marks = z
+		#self.display()
+	def display(self):
+		Student.display()
+		print("Student Name :",self.name)
+		print("Student Name :",self.sno)
+		print("Student Name :",self.marks)
+s1 = Student("Mahesh",10,100)
+#s1.display()

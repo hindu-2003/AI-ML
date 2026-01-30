@@ -1,0 +1,14 @@
+#LIST_Q73.py
+#73. Write a Python program to remove consecutive duplicates of a given list. 
+#		Original list: [0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4]
+#		After removing consecutive duplicates:
+#		[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 4]
+def con_dupl(lst):
+	val = [lst[0]]
+	for element in lst[1:]:
+		if element!= val[-1]:
+			val.append(element)
+	return res
+org_list =[0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4]
+#main program
+print(con_dupl(org_list))

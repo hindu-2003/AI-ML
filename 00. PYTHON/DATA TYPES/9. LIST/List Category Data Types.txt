@@ -1,0 +1,10 @@
+			======================================================
+				 List Category Data Types (Collection Data Types)
+			======================================================
+=>The purpose of List Category Data Types is that "To Store Multiple Values either of Same Type OR Different Type OR Both the Types with Unique and Duplicates in single Object".
+=>In Python Programming, we have 2 Data types in List Category. They are
+				1. list (mutable)
+				2. tuple (immutable)
+============================================================================================
+
+

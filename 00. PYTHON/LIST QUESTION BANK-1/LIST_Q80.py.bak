@@ -1,0 +1,23 @@
+# LIST_Q80.py
+# 80. Write a Python program to insert an element at a specified position into a given list. 
+# Original list:
+lst = 	[1, 1, 2, 3, 4, 4, 5, 1]
+#	After inserting an element at kth position in the said list:
+res = 	[1, 1, 12, 2, 3, 4, 4, 5, 1]
+
+# finding num values
+l = set(res)-set(lst)
+num = l.pop()
+
+# demonstrting problem
+def add(p):
+    p.insert(2, num)
+    return p
+print('*'*50)
+op = add(lst)
+if op == res:
+	print("\tEXECUTION PERFECTLY COMPLETED")
+	print('='*50)
+	print("\t",op)
+	print('*'*50)
+

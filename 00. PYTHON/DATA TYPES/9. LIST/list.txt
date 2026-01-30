@@ -1,0 +1,107 @@
+			=============================================
+						1. list
+			=============================================
+Index
+-------------
+=>Purpose of list
+=>Notation for storing list Data
+=>Create an object of list
+=>Types of Lists
+=>Memory Management of List
+=>Operations on List
+=>Pre-Defined Functions in list
+=>Inner List OR Nested List
+=>Programming Examples
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Properties of list
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>'list' is one of the Pre-Defined Class and Treated as List Category Data Type.
+=>The purpose of list data type is that " To Store Multiple Values either of Same Type OR Different Type OR Both the 
+    Types with Unique and Duplicates in single Object".
+=>The Elements OR Values of List must be written within Square Brackets [ ] and Values Must be separated by 
+     comma.
+=>Syntax:       varname=[Val1,Val2,.....,Val-n]
+		here varname is an object of <class, 'list'>
+=>An object of list maintains Insertion Order
+=>On the Object of list, we can Perform Both Indexing and Slicing
+=>An object of list belongs to MUTABLE bcoz It allows us to perform Updations(modifications) with Indexing and 
+   Slicing Operations (Item Based Assigment are allowed)
+ =>The python List object Supports Both +ve Indexing and -Ve Indexing Values .
+=>In Python programming, we can create Two Types of List Objects. They are
+				1. Empty List
+				2. Non-Empty List
+-------------------------
+1. Empty List
+-------------------------
+=>An Empty List is one , which does not contain any Elements and whose length is 0.
+=>Syntax1: listobj=[]
+			OR
+=>Syntax2: listobj=list()
+-----------------
+Examples
+-----------------
+>>> lst1=[]
+>>> print(lst1,type(lst1))----------[] <class 'list'>
+>>> len(lst1)--------------------------0
+>>> lst2=list()
+>>> print(lst2,type(lst2))---------[] <class 'list'>
+>>> len(lst2)-------------------------0
+-------------------------
+2. Non-Empty List
+-------------------------
+=>A Non-Empty List is one, which Contains Elements whose Length is >0
+=>Syntax-1: listobj=[Val1,Val-2,....,Val-n]
+=>Syntax-2:  listobj=list(object)  # here object is Iterable (Contans More than One Value)
+=>Syntax-3:  listobj=list( [object] )  # here object is Non-Iterable (Contans  One Value--int,float,bool,complex)
+------------------------
+Examples
+------------------------
+>>> s="RADAR"
+>>> lst=list(s)
+>>> print(lst,type(lst))---------['R', 'A', 'D', 'A', 'R'] <class 'list'>
+--------------
+>>> lst=list(range(10,20,2))
+>>> print(lst,type(lst))-------[10, 12, 14, 16, 18] <class 'list'>
+--------------------
+>>> a=10
+>>> print(a,type(a))--------------10 <class 'int'>
+>>> lst=list(a)------------TypeError: 'int' object is not iterable
+-----Alternative Solution-----------
+>>> a=10
+>>> print(a,type(a))---------10 <class 'int'>
+>>> lst=list([a])
+>>> print(lst,type(lst))------[10] <class 'list'>
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Examples
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> lst=[10,20,30,40,10,20,45,67,-56]
+>>> print(lst,type(lst))------------[10, 20, 30, 40, 10, 20, 45, 67, -56] <class 'list'>
+>>> lst1=[100,"Rossum",34.56,True,2+3j]
+>>> print(lst1,type(lst1))------------[100, 'Rossum', 34.56, True, (2+3j)] <class 'list'>
+-------------------------------------
+>>> lst1=[100,"Rossum",34.56,True,2+3j]
+>>> print(lst1,type(lst1),id(lst1))-----------[100, 'Rossum', 34.56, True, (2+3j)] <class 'list'> 2844421380224
+>>> lst1[0]-------------100
+>>> lst1[-1]------------(2+3j)
+>>> lst1[0:4]-----------[100, 'Rossum', 34.56, True]
+>>> lst1[0:3]-----------[100, 'Rossum', 34.56]
+>>> lst1[::-1]-----------[(2+3j), True, 34.56, 'Rossum', 100]
+------------------------------------------
+>>> lst1=[100,"Rossum",34.56,True,2+3j]
+>>> print(lst1,type(lst1),id(lst1))----------[100, 'Rossum', 34.56, True, (2+3j)] <class 'list'> 2844421229312
+>>> lst1[0]=150 # Index Based Updation
+>>> print(lst1,type(lst1),id(lst1))----[150, 'Rossum', 34.56, True, (2+3j)] <class 'list'> 2844421229312
+>>> lst1[1:3]=["Guido",55.55] #  # Slice Based Updation
+>>> print(lst1,type(lst1),id(lst1))------[150, 'Guido', 55.55, True, (2+3j)] <class 'list'> 2844421229312
+-----------------------------------------------------------
+>>> s="RADAR"
+>>> lst=list(s)
+>>> print(lst,type(lst))---------------['R', 'A', 'D', 'A', 'R'] <class 'list'>
+>>> lst=list(range(10,20,2))
+>>> print(lst,type(lst))--------------[10, 12, 14, 16, 18] <class 'list'>
+---------------------------
+>>> s="MISSISSIPPI"
+>>> lst=list(s)
+>>> print(lst,type(lst))------------['M', 'I', 'S', 'S', 'I', 'S', 'S', 'I', 'P', 'P', 'I'] <class 'list'>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------

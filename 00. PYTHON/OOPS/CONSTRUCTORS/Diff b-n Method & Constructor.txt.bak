@@ -1,0 +1,16 @@
+			=============================================================
+					Difference  between Constructor and Method
+			=============================================================
+Method
+---------------
+=> Name of Method can be any name .
+=> Method will be executed if we call the method.
+=> Per object, Method can be called any number of times.
+=> Inside method we can write buisness logic.
+
+Constructor
+--------------------
+=> Constructor name should be always __init__ .
+=> Constructor will be executed Automatically when we create the object
+=> Per object, Method can be called only once .
+=> Inside the constructor we have to declare and intailize Instance variables.

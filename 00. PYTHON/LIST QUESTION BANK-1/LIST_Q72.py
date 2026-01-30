@@ -1,0 +1,16 @@
+#LIST_Q72.py
+#72. Write a Python program to flatten a given nested list structure.
+#		Original list: [0, 10, [20, 30], 40, 50, [60, 70, 80], [90, 100, 110, 120]]
+#		Flatten list:  [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120] 
+def flaten_list(lst):
+	l =[]
+	for i in lst:
+		if type(i)!=list:
+			l.append(i)
+		else:
+			for j in i:
+				l.append(j)
+	return l
+org_list = [0, 10, [20, 30], 40, 50, [60, 70, 80], [90, 100, 110, 120]]
+#main program
+print(flaten_list(org_list))  #[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120] 

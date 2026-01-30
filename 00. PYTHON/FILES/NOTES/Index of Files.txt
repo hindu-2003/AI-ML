@@ -1,0 +1,71 @@
+				=========================================================
+						Files OR Streams in Python
+				=========================================================
+Index
+---------------------------------------------------
+=>Purpose of Files
+=>Types of Applications
+=>Definition of File and Stream
+=>Types of Files
+		i) Text Files
+		ii) Binary Files
+=>Types of Operations on Files
+		i) Write Operations
+		ii) Read Operations
+=>Steps for Performing Write Operations
+=>Steps for Performing Reading Operations
+----------------------------------------------------------------
+=>File Opening Modes
+		i) r    ii) w   iii) a
+		iv) r+  v) w+  vi) a+
+		vii) x   viii) x+
+=>Number of approaches to open the file
+		a) By using open()
+		b) By using "with open() as"
+=>Programming Examples
+=>Writing the Data to the File
+		a) write()
+		b) writelines()
+	=>Programming Examples
+=>Reading the Data from Files
+		a) read()
+		b) readlines()
+	=>Programming Examples
+=>Random Access Files
+		a) tell()
+		b) seek()
+	=>Programming Examples
+=>Programming Examples on Image Copy (Binary Files)
+-----------------------------------------------------------------------------------------------
+=>Pickling (Object Serialization) and Un-Pickling (Object De-Serialization)
+=>Implementation of pickle module
+=>Programming Examples
+----------------------------------------------------------------------------------------------------
+=>Working with CSV Files
+=>Importance of CSV Files
+=>Implementation CSV Files with csv Modules
+=>Operations CSV Files
+		a) csv.reader()
+		b) csv.writer()
+		c) csv.DictReader()
+		d) csv.DictWriter()
+=>Programmin Examples
+-----------------------------------------------------------------------------------------------------
+=>Working with JSON (Java Script Object Notation) Files
+=>Importance of JSON Files
+=>Implementation JSON Files with  json Modules
+=>Operations on json files
+		a) json.loads()
+		b) json.load()
+		c) json.dump()
+=>Programming Examples
+------------------------------------------------------------------------------------------------------
+=>Working with OS Based Operations
+=>Implementation OS Based Operations with  os Modules
+=>Programming Examples
+=======================================x==============================================
+
+
+
+
+

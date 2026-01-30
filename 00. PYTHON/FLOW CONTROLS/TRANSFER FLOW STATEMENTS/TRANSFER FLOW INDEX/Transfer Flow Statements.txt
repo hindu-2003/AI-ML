@@ -1,0 +1,12 @@
+		=======================================================
+					Transfer Flow Statements
+		=======================================================
+=>The purpose of Transfer Flow Statements is that "To transfer the control of PVM from One Part of the Program to 
+    Another Part of the Program"
+=>In Python Programming, we have 4 types of Transfer Flow Statements. They are
+
+			1. break
+			2. continue
+			3. pass
+			4. return (In Functions )
+=====================================================================================

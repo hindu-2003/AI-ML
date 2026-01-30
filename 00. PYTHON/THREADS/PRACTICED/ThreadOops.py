@@ -1,0 +1,20 @@
+#ThreadOops.py
+class oop:
+	import threading,time
+	def multitable(n):
+		if n<=0:
+			print("\t {}  is a Invalid input".format(n))
+		else:
+			for i in range(1,11):
+				print("\t{} x {} = {}".format(n,i,n*i))
+				time.sleep(0.00625)
+# Main Program
+t1=threading.Thread(target=oop().multitable,args=(16,))
+t2=threading.Thread(target=oop().multitable,args=(19,))
+t3=threading.Thread(target=oop().multitable,args=(18,))
+t4=threading.Thread(target=oop().multitable,args=(15,))
+#Dispatch
+t1.start()
+t2.start()
+t3.start()
+t4.start()

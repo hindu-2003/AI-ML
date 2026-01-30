@@ -1,0 +1,19 @@
+		===============================================================
+								Classes
+		===============================================================
+=>The purpose of Classes Concept is that "To Develop Programmer-Defined Data Type + To develop any Real Time 
+    Application."
+=>The purpose of Developing Programmer-Defined Data Type is that "To Store Customized Data + To Perform 
+    Customized Operations"
+=>To Develop Programmer-Defined Data Type by using Classes Concept, we use a key word called "class".
+=>In Python Programming, Class Names are terated as Programmer-Defined Data Types.
+=>In OOPS, All Programs Must starts with Class Names (i.e without ClassesnConcept, we can't develop any program 
+    or  Application)
+-------------------------------------------
+Definine Class
+-------------------------------------------
+=>A Class is a Collection of Data Members and Methods (Functions in OOPs are called Methods).
+=>When we define a Class, There is no memory space is created for Data Members and Methods But whose Memory 
+    Space is created when we create an Object w.r.t Class Name.
+=>What are all the Data Members and Methods Available in the Class, which are appearing as it is as a Part of Object with memory space. So that Programmers can store the Data in Data Members of Object and Performs Operations on the Data Members of Object by using Methods.
+----------------------------------------------------------------------------------------------------------------------------

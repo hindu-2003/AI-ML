@@ -1,0 +1,23 @@
+			======================================================
+						Regular Expressions  OR  RegEx
+			======================================================
+=>Regular Expressions is one of the Programming Language Independent Concept.
+=>The purpose of Regular Expressions is that "To Build Robust Application By Peforming Data Validations".
+=>The Regular Expressions  concept implemented in Python by using a module called "re".
+-----------------------------------------------------
+Applications of Regular Expressions
+-----------------------------------------------------
+=>The Regular Expressions are used in development of Language Compilers and Interpreters
+=>The Regular Expressions are used in development OS Based Operations.
+=>The The Regular Expressions are used in development Universal Protocals--http,ftp,smtp,pop,nmtp..etc
+=>The Regular Expressions are used in development of Electronic Circuits
+=>The Regular Expressions are used in development Pattern Matching.
+----------------------------------------------------
+Definition of Regular Expressions 
+----------------------------------------------------
+=>The Regular Expressions is one of the Search Pattern which is the combination of Alphabets,Digits and Special Symbols which is used in finding or Matching or searching in given Data and obtains Desired Data.
+----------------------------------------------------
+gd="Kp5Dw&8Lq@6PXzU6!amS "
+
+
+

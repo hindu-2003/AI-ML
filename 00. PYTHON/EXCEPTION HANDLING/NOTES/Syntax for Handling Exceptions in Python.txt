@@ -1,0 +1,53 @@
+			=====================================================
+					Handling the Exceptions in PYTHON
+							OR
+					Syntax for Handling Exceptions in Python
+			=====================================================
+=>Handling the Exceptions are Nothing Converting Technical Error Messages into User-Friendly Error Messages.
+=>To do this Process in Python Programming, we have 5 Key words. They are
+
+			1. try
+			2. except
+			3. else
+			4. finally
+			5. raise
+--------------------------------------------------------------------------------------------------------------------------------------------
+Syntax for Handling Exceptions in Python
+--------------------------------------------------------------------------------------------------------------------------------------------
+		
+		try:
+		    ----------------------------------
+		    Block of Statements generates Exceptions
+		    ----------------------------------
+		except  exception-class-name-1:
+			-------------------------------------
+			Block of Statements generates 
+			User-Friendly Error Message
+			------------------------------------
+		except exception-class-name-2:
+			-------------------------------------
+			Block of Statements generates 
+			User-Friendly Error Message
+			------------------------------------
+		-----------------------------------------------
+		except exception-class-name-n:
+			-------------------------------------
+			Block of Statements generates 
+			User-Friendly Error Message
+			------------------------------------
+		else:
+			-------------------------------------------
+			Block of Statements 
+			Displays the Result of the Program
+			-----------------------------------------------
+		finally:
+			----------------------------------------------
+			Block of Statements
+			Executes Compulsorily
+			----------------------------------------------
+
+		
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------

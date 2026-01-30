@@ -1,0 +1,60 @@
+			======================================================
+						2. bytes
+			======================================================
+=>'bytes' is one of the Pre-Defined Class and treated as Sequence Data Type.
+=>The purpose of 'bytes' data type is that "To Implement End-to-End Encryption in Transmitting Confidential Data in 
+    Networking (Internet world) for maintaing Securecy of the Data".
+=>To Implement End-to-End Encryption Process, bytes data stores the Data with the range [0 to 256).ie 0 to 255 (256-1) 
+    only.
+=>There is no Symbolic Notation to store the Data of  Bytes bcoz programmer never stores bytes data in the programs.But we can convert other type values into bytes by using bytes()
+		Syntax:  varname=bytes(object)
+=>An object of bytes maintains Order of Insertion ( Nothing But, whatever the Order, we insert in the same order the Data will be displayed)
+=>On the Object of bytes, we can form both Indexing and Slicing Operations.
+=>An object of bytes belongs to IMMUTABLE bcoz bytes objects does not  support item assignment
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Examples
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> lst=[12,0,34,256,122,34,56]
+>>> print(lst,type(lst))---------------------[12, 0, 34, 256, 122, 34, 56] <class 'list'>
+>>> b=bytes(lst)-----------------------------ValueError: bytes must be in range(0, 256)
+>>> lst=[12,0,-34,255,122,34,56]
+>>> print(lst,type(lst))--------------------[12, 0, -34, 255, 122, 34, 56] <class 'list'>
+>>> b=bytes(lst)----------------------------ValueError: bytes must be in range(0, 256)
+------------------------------------
+>>> lst=[12,0,34,255,122,34,56]
+>>> print(lst,type(lst))---------------[12, 0, 34, 255, 122, 34, 56] <class 'list'>
+>>> b=bytes(lst)
+>>> print(b,type(b))------------b'\x0c\x00"\xffz"8' <class 'bytes'>
+>>> for val in b:
+...		print(val)
+...
+			12
+			0
+			34
+			255
+			122
+			34
+			56
+>>> print(b[0])-------------12
+>>> print(b[-1])------------56
+>>> print(b[0:4])----------b'\x0c\x00"\xff'
+>>> for val in b[0:4]:
+...		print(val)
+...
+			12
+			0
+			34
+			255
+-------------------------------
+>>> for val in b[::-1]:
+...		print(val)
+...
+		56
+		34
+		122
+		255
+		34
+		0
+		12
+>>> b[0]=122-------------TypeError: 'bytes' object does not support item assignment
+============================================================================================

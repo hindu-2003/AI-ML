@@ -1,0 +1,15 @@
+#LIST_Q71.py
+#71. Write a Python program to check whether all dictionaries in a list are empty or not. 
+#	Sample list : [{},{},{}]
+#	Return value : True
+#	Sample list : [{1,2},{},{}]
+#	Return value : False
+def d_list(lst):
+	for d in lst:
+		val =( len(d)==0)
+		return val
+s_list1 = [{},{},{}]
+s_list2 = [{1,2},{},{}]
+#main program
+print( d_list(s_list1))
+print(d_list(s_list2))

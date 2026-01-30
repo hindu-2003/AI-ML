@@ -1,0 +1,8 @@
+In the list we are insert to use negative index then it performs like -1
+
+example:
+>>> lst =[1,2,3,4,5,6]
+>>> lst.insert(-2,10)
+>>> print(lst)
+[1, 2, 3, 4, 10, 5, 6]
+>>>

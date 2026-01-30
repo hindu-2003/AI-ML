@@ -1,0 +1,41 @@
+			===============================================================
+					Python Data Base Communication (PDBC)
+					
+			===============================================================
+Index
+---------------------------------
+=>Limitation of Files and Advantages of Data Base Softwares (RDBMS)
+=>Purpose of PDBC
+=>Importance of Database Softwares in Industry
+=>Third Party Modules for Python Programmers for Communicating with Databases
+=>Setup of Third Party Modules in current working machines
+---------------------------------------
+=>Steps for Developing Python Database Communication Applications.
+=>Types of Queries
+		a) DDL(Data Definition Language) Queries
+		b) DML(Data Manipulation Langauge) Queries 
+		c) DRL (Data Retrieval Language) Queries 
+=>Executing DDL Queries
+		a) create 
+		b) alter with add, modify
+		c) drop
+	=>Programming Examples
+=>Executing DML Queries
+		a) insert
+		b) delete
+		c) update
+	=>Programming Examples
+=>Executing DRL Queries
+		a) select
+	=>Programming Examples
+----------------------------------------------------------------
+=>Meta Data Programming
+=>Programming Examples
+-----------------------------------------------------------------
+Project / Case Study
+=====================================x===========================================
+For Learning Oracle--Best BOOK
+
+		SQL, PL/SQL Developers Guide
+		By Ivan Bayras
+		 with BPB Publication

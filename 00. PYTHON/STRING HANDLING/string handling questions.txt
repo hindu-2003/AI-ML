@@ -1,0 +1,12 @@
+						Important Programs Regarding string concept
+						=======================================
+1.Write a program to reverse the given string.
+2.Program for revrse order words.
+3.Program for reverse internal content of each word.
+4.write a program to print characters at odd positions and even position for the given string.
+5.Program for merge characters of 2 strings into a single string by taking characters alternatevely.
+6.write a program to sort the characters of the string and output the first alphabets later numaric values .
+7.write a program for the following requirement=> i/p--> a4b3c2 then o/p---> aaaabbbcc.
+8.Write a program to perform the following acitivity =>i/p-->a4k3b2 o/p-->aeknbd.
+9.Write a program to remove duplicate the string => i/p-->AAABBBDDFFFEECC o/p--> ABCDEF.
+10.Write a program to fing the no.of occurences of each characters present in the given string.

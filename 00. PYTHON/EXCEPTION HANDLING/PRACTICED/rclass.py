@@ -1,0 +1,1 @@
+class DivsionByZeroError(Exception):pass

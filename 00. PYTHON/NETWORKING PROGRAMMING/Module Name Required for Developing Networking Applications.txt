@@ -1,0 +1,71 @@
+				==========================================================
+					Module Name Required for Developing Networking Applications
+				==========================================================
+=>The Module Name Required for Developing Networking Applications is "socket".
+=>The module socket contains the Following Functions.
+---------------------------------------------------------------------------------------------------------------------------------------------
+1.socket()
+---------------------------------------------------------------------------------------------------------------------------------------------
+=>Syntax:   varname=socket.socket()
+=>This function is used for Creating an object of Socket.
+=>If we create at Client Side Program then It is called Client Socket.
+=>If we create at Server Side Program then It is called Server Socket.
+=>An object of socket is treated as Bi-Directional Communication Entity.
+---------------------------------------------------------------------------------------------------------------------------------------------
+2. bind()
+---------------------------------------------------------------------------------------------------------------------------------------------
+Syntax:   serversockobj.bind(("DNS/IP Address",portno))
+=>This Function is used for Binding the Socket Object at Certain DNS (Machine) OR IPAddress and Port Number in the 
+    tuple.
+---------------
+Examples:			ss=socket.socket()
+---------------			ss.bind(("localhost",9999))
+				Here ss is called server socket
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. listen()
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Syntax:   serversockobj.listen(No. of Clients)
+=>This Function is used for Configuring the Server Socket (Server Side Program) in such way that To how Many 
+    Clients Server Side Program can communicate.
+Examples:    ss.listen(2)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+4. accept()
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Syntax:                var1,var2  = socketobj.accept()
+=>This Function is used for accepting the Client Socket Request .
+=>Here Var1 represents Client Side Program Object (i.e Client Socket object)
+=>here Var2 represents Client Side Program IP Address.
+-----------------
+Examples
+-----------------
+				cs,ca=ss.accept()
+=>Here cs contains Client Side Program Requested Data
+=>here ca contains Client Side Program IP Address.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+5. recv() with decode()
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Syntax:       bytesobj=clientsocket.recv( 1024 OR 2048 OR 4096 )
+			strdata=bytesobj.decode()
+					OR
+		 strdata=clientsocket.recv( 1024 OR 2048 OR 4096 ).decode()
+=>This Function is used for Receving the Client Side Requested Data At server Side Program and we can also use at Client side Program for Receving the Server Program Response.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+6. send() with encode()
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Syntax:	bytesdata=str(Non-StrData).encode()
+			clientsocketobj.send(bytesdata)
+					OR
+			clientsocketobj.send( str(Non-StrData).encode() )
+=>This Function is used for Sending the Request of Client Side Program to Server Side Program and we can also use at Server Side Program for Sending Response to Client Side Program.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+7. connect()
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Syntax:   Clientsockobj.connect(("DNS/IP Address",Portno))
+=>This Function is used for Obtaining The Connection from server side program (Server Socket) by the Client Side 
+    Program (Client Socket)
+--------------------
+Examples
+--------------------
+				cs=socket.socket()
+				cs.connect(("localhost",9999))
+---------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,42 @@
+# LIST_Q76.py
+#76. Write a Python program to create a list reflecting the modified run-length encoding from a given list of integers or a given list of characters. 
+#	Original list:
+org_lst=[1, 1, 2, 3, 4, 4, 5, 1]
+#	List reflecting the modified run-length encoding from the said list:
+exp_lst =[[2, 1], 2, 3, [2, 4], 5, 1]
+#	Original String: 
+org_str ='aabcddddadnss'
+#	List reflecting the modified run-length encoding from the said string:
+exp_str =[[2, 'a'], 'b', 'c', [4, 'd'], 'a', 'd', 'n', [2, 's']]
+def encode(lst):
+	print("="*80)
+	count = 1
+	res = []
+	cv = lst[0]
+	for i in lst[1::]
+		if i == cv:
+			count=count+1
+		else:
+			if count>1:
+				res.append([count,cv])
+			else:
+				res.append(cv)
+			cv = i
+			count = 1
+	if count>1:
+		res.append([count,cv])
+	else:
+		res.append(cv)
+	return res
+print("Exepected word count =", encode(org_str))
+print("Exepected list count =", encode(org_lst))
+print("_"*80)
+
+	
+
+		
+
+
+
+
+

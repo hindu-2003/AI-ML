@@ -1,0 +1,19 @@
+#LIST_Q83.py
+#83. Write a Python program to round every number of a given list of numbers and print the total sum multiplied by the length of the list. 
+#	Original list: [22.4, 4.0, -16.22, -9.1, 11.0, -12.22, 14.2, -5.2, 17.5]
+#	Result:243
+org_lst = [22.4, 4.0, -16.22, -9.1, 11.0, -12.22, 14.2, -5.2, 17.5]
+res = 243
+def calc(a):
+	val = 0
+	for i in a:
+		v = round(i)
+		val = val+v
+return (val*len(a))
+#main program
+result = calc(org_lst)
+print(result)
+
+
+	
+

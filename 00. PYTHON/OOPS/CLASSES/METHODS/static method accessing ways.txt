@@ -1,0 +1,124 @@
+			================================================
+					STATIC METHOD ACCESSING WAYS
+			================================================
+=> Display the Data of Different Objects of Different Classes.
+=> By using Single Method called Static Method.
+
+1st Way
+==========
+=> Direct calling the static method 
+		@staticmethod
+Example:	   class nit:
+			def display()
+			------------------
+			------------------
+=> calling static method by using Class Name.
+ nit. Display(instance method object, __)
+
+
+2nd Way
+==========
+=> Static method of creating an object and that object related to class 
+		@staticmethod
+Example:	   class nit:
+			def display()
+			------------------
+			------------------
+=> calling static method by using Class Name.
+n = nit()   here static method of class creating object ,later call method
+n.display(instance method object, __)
+
+3rd Way
+==========
+=> Static method of creating an object and that object related to class 
+		  @staticmethod
+Example:	   class nit:
+			def display()
+			------------------
+			------------------
+=> calling static method by using Class Name.
+nit().display(instance method object, __)
+=> Here direct calls to class ,name-less object 
+
+==================================================================================
+               @classmethod through calls
+
+
+4rd Way
+==========
+        class nit:
+            @classmethod
+            def recieve(cls,obj,objinfo):
+                cls.display(obj,objinfo)   # calling Static Method from Class Level Method w.r.t cls
+            @staticmethod
+            def display(obj,objinfo):
+			------------------------
+			------------------------
+nit.display(t,"Teacher")
+=> calling Class Level method by Class name
+
+
+==================================================================================
+              				 Instance method through calls
+==================================================================================
+
+
+
+5rd Way
+==========
+ class nit:
+            def recieve(self,obj,objinfo):
+                self.display(obj,objinfo)   # calling Static Method from Instance Method w.r.t self
+            @staticmethod
+            def display(obj,objinfo):
+		-----------------------------
+		-----------------------------
+nit().display(t,"Teacher")
+=>  calling Instance method by Name-Less object
+
+
+==================================================================================
+
+
+6th Way
+==========
+class student:
+	def studentdata:
+		-----------------
+		-----------------
+		nit.display(self,"student")
+class student:
+	def Employee:
+		-----------------
+		-----------------
+		nit.display(self,"Employee")
+class student:
+	def Teacher:
+		-----------------
+		-----------------
+		nit.display(self,"Teacher")
+		
+ class nit:
+            @staticmethod
+            def display(obj,objinfo):
+		-----------------------------
+		-----------------------------
+		for k,v in obj.__dict__.items():
+			print("{}---->{}".format(k,v))
+		print()
+
+#Main Program
+eo=Employee()
+so=Student()
+to=Teacher()
+#read the data for Different Objects
+eo.readempdata()
+so.readstudata()
+to.readteacherdata()
+
+
+
+
+
+
+

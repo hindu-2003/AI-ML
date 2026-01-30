@@ -1,0 +1,33 @@
+				==============================
+							return
+				==============================
+=> Return is a keyword
+=> This return keyword is EXIT the function and whose call the function then return the value.
+=> return key word later logic will not Excuted
+
+Ex:		def myfunction():
+		       return 3+3
+		print(myfunction())
+
+		o/p :- 6
+==========================
+
+Ex2:	def myfunction():
+		       return 3+3
+		       print("hi")
+		print(myfunction())
+
+		o/p :- 6
+==========================
+
+Ex3:      def myfunction():
+			 print("hi")
+		         return 3+3
+		      
+		print(myfunction())
+
+		o/p :-
+			   hi
+			    6
+
+==========================

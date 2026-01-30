@@ -1,0 +1,11 @@
+				===========================================================
+						Combinations of Dict in List,Tuple,Set,Dict
+				===========================================================
+							dict in dict---> possible
+							set in dict --> possible
+							tuple in dict --> possible
+							list in dict --> possible
+							dict in set --=> not possible
+							dict in tuple --> possible
+							dict in list --> possible
+				===========================================================

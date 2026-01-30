@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Example</title>
+<meta charset="UTF-8">
+<script>
+function basicDateMethods(){
+    var dateObj = new Date();
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var dayIndex = dateObj.getDay();
+    var dayName = days[dayIndex];
+    alert(dayName);
+}
+</script>
+</head>
+<body>
+<div id="output"></div>
+<button onclick="basicDateMethods()">Click</button>
+</body>
+</html>

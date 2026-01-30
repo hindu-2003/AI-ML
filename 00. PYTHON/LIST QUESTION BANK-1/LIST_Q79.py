@@ -1,0 +1,23 @@
+# LIST_Q79.py
+#79. Write a Python program to remove the K'th element from a given list, print the new list. 
+#	 Original list:
+lst= [1, 1, 2, 3, 4, 4, 5, 1]
+# After removing an element at the kth position of the said list:
+res = [1, 1, 3, 4, 4, 5, 1]
+
+# finding k values
+l = set(lst)-set(res)
+k = l.pop() 
+
+# demonstrting problem 
+def remove(p):
+	if k<0 or k>=len(lst):
+		raise IndexError ("The k'th elmenent is out of index")
+	return lst[:k]+lst[k+1:]
+print('*'*50)
+op = remove(lst)
+if op == res:
+	print("\tEXECUTION PERFECTLY COMPLETED")
+	print('='*50)
+	print(op)
+	print('*'*50)

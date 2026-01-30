@@ -1,0 +1,18 @@
+# Write a Python program to change the position of every n-th value with the (n+1)th in a list.
+# 	Sample list: [0,1,2,3,4,5]
+# 	Expected Output: [1, 0, 3, 2, 5, 4]
+# LIST_Q38..py
+def swap(lst):
+    result = []
+    for i in range(1,3):
+        if i % 2 == 1:
+            result.append(i)
+    for j in range(2,4):
+        if j%2==0:
+            result.append(j)
+    return result
+
+# Sample usage:
+list = [0, 1, 2, 3, 4, 5]
+expected_output = swap(list)
+print(expected_output)  # [1, 0, 3, 2, 5, 4]

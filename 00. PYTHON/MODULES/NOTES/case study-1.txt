@@ -1,0 +1,29 @@
+
+				
+				=======================================
+					Arithmetic Operations
+				=======================================
+					1. Addition
+					2. Substraction
+					3. Multiplication
+					4. Division
+					5. Modulo Div
+					5. Exponentiation
+					6. Exit
+				=======================================
+				Enter Ur Choice:
+				=======================================
+File Systems
+=============
+menu.py<---File Name and Module
+	menu()
+Operations.py<---File Name and Module Name
+	addop()
+	subop()
+	mulop()
+	divop()
+	modop()
+	expop()
+AopDemo.py<---main Program
+
+					

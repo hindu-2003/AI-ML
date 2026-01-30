@@ -1,0 +1,148 @@
+				==============================
+							return
+				==============================
+=> Return is a keyword
+=> This return keyword is EXIT the function and whose call the function then return the value.
+=> return key word later logic will not Excuted
+
+Ex:		def myfunction():
+		       return 3+3
+		print(myfunction())
+
+		o/p :- 6
+==========================
+
+Ex2:	def myfunction():
+		       return 3+3
+		       print("hi")
+		print(myfunction())
+
+		o/p :- 6
+==========================
+
+Ex3:      def myfunction():
+			 print("hi")
+		         return 3+3
+		      
+		print(myfunction())
+
+		o/p :-
+			   hi
+			    6
+
+==========================
+
+=>The Python return statement is a special statement that you can use inside a function or method to send the		function’s result back to the caller
+=> A return statement consists of the return keyword followed by an optional return value.
+=> The return value of a Python function can be any Python object, and you can use them to perform further		computation in your programs.
+=>Using the return statement effectively is a core skill if you want to code custom functions that are Pythonic and		robust
+=>We use return to send objects from your functions back to the caller code.
+=>We can use return to return one single value or multiple values separated by commas.
+=> We should try to keep your code readable and maintainable by avoiding complex return statements.
+=> The return value of a Python function can be any Python object. Everything in Python is an object. So, your functions can return numeric values (int, float, and complex values), collections and sequences of objects (list, tuple, dictionary, or set objects), user-defined objects, classes, functions, and even modules or packages.
+=>we can omit the return value of a function and use a bare return without a return value. You can also omit the entire return statement. In both cases, the return value will be None. 
+
+1.Explicit return Statements
+===============================
+=>An explicit return statement immediately terminates a function execution and sends the return value back to the caller code.
+
+=> To add an explicit return statement to a Python function, you need to use return followed by an optional return value.
+
+Ex:
+===========================================
+def return_42():
+   return 42  # An explicit return statement
+
+
+print(return_42()*2) # The caller code gets 42
+------------------------------------------------------------------
+=> If We define a function with an explicit return statement that has an explicit return value, then you can use that return value in any expression:
+============================================
+Ex:
+def return_42():
+   return 42  # An explicit return statement
+
+
+print(return_42()*2) =====> 84
+print(return_42()+8) =====> 50
+------------------------------------------------------------------------
+
+NOTE: that you can use a return statement only inside a function or method definition. If you use it anywhere else, then you’ll get a SyntaxError:
+
+Ex
+============================================
+return 42
+
+	File "<stdin>", line 1
+SyntaxError: 'return' outside function
+____________________________________________
+
+=> We can use any Python object as a return value. Since everything in Python is an object, you can return strings, lists, tuples, dictionaries, functions, classes, instances, user-defined objects, and even modules or packages.
+Ex:
+===========================================
+def get_even(numbers):
+    even_nums = [num for num in numbers if not num % 2]
+    return even_nums
+print(get_even([1, 2, 3, 4, 5, 6]))
+
+o/p :
+[2,4,6]
+____________________________________________
+NOTE: Even though list comprehensions are built using for and (optionally) if keywords, they’re considered expressions rather than statements. That’s why you can use them in a return statement.
+
+Ex:calculate the mean of a sample of numeric values. To do that, you need to divide the sum of the values by the number of values(Average)
+============================================
+def mean(sample):
+    return sum(sample) / len(sample)
+
+
+print(mean([1, 2, 3, 4]))====>2.5
+____________________________________________
+
+2.implicit-return-statements
+---------------------------------------
+
+=> A Python function will always have a return value. 
+=> So, if you don’t explicitly use a return value in a return statement, or if you totally omit the return statement, then Python will implicitly return a default value for you.
+=>That default return value will always be None.
+
+EX:
+============================================
+def add_one(x):
+    # No return statement at all
+  result= x + 1
+
+
+r = add_one(5)
+print(r)      ============> None
+__________________________________________________________________
+=> To over come this reslut replace with return keyword 
+=> When we use Return key word,function call is assigned by another variable
+=> Then that variable was store the returned values
+__________________________________________________________________
+def add_one(x):
+    # with return statement at all
+  return x + 1
+
+
+r = add_one(5)
+print(r)      ============> 6
+__________________________________________________________________
+
+Reference :
+https://realpython.com/python-return-statement/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+		===========================================================
+				Programmer-Defined Character Classes
+		===========================================================
+=>The Programmer-Defined Character Classes are Defined by Programmers which are used for Designing OR Defining Search Patterns and they are used in Searching OR Matching OR Finding in Given Data and Obtains Desired Result.
+=>The Syntax for Programmer-Defined Character Classes is given bellow
+	
+		"[Programmer-Defined Character Class]"
+=>We have the following Programmer-Defined Character Classes.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+1.  [abc]---------------->Searching for either 'a' or 'b' or 'c' only
+2.  [^abc]-------------->Searching for all except  'a' or 'b' or 'c' 
+3.  [A-Z]---------------->Searching for all upper case Alphabets only.
+4.  [^A-Z]-------------->Searching for all  except upper case Alphabets.
+5.  [a-z]----------------->Searching for all lower case Alphabets only.
+6.  [^a-z]--------------->Searching for all except lower case Alphabets .
+7.  [0-9]----------------->Searching for all Digits only
+8.  [^0-9]--------------->Searching for all  except Digits 
+9.  [A-Za-z]------------>Searching for all Alphabets (Upper +Lower ) only.	
+10. [^A-Za-z]---------->Searching for all  except Alphabets (Upper +Lower ) .	
+11. [A-Za-z0-9]------->Searching for Alpha-Numerics (except Special symbols) only
+12. [^A-Za-z0-9]----->Searching for all Sepcial Symbols (except Alpha-Numerics ) only 
+13. [A-Z0-9]----------->Searching for Upper Case Alphabets and Digits only
+14. [^A-Z0-9]--------->Searching for all except Upper Case Alphabets and Digits 
+15. [a-z0-9]----------->Searching for Lower Case Alphabets and Digits only
+16. [^a-z0-9]--------->Searching for all exceptlower Case Alphabets and Digits 
+----------------------------------------------------------------------------------------------------------------------------------------------------------

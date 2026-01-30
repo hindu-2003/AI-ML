@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c6759656-9c03-4c79-b8a4-d012598a11e4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/APPROACHES PYTHON/APPREOACHES IN PYTHON/Number of Approaches to Develop Python Programs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/APPROACHES PYTHON/CircleEx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/APPROACHES PYTHON/DataRead1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/APPROACHES PYTHON/DataRead2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/APPROACHES PYTHON/DataRead3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/APPROACHES PYTHON/DataRead4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/APPROACHES PYTHON/DataRead5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/APPROACHES PYTHON/DataRead6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/APPROACHES PYTHON/DataRead7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/APPROACHES PYTHON/RectEx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/APPROACHES PYTHON/SimpleInt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/APPROACHES PYTHON/SwapLogic1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/APPROACHES PYTHON/addex1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/APPROACHES PYTHON/addex2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/APPROACHES PYTHON/addex3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/COMBINATIONS DATA TYPES/Combination of dict with dict,set,tuple and list (2).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/COMBINATIONS DATA TYPES/Combination set with set,list and tuple (1).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/COPY TECHINIQUES/Copy Techniques in Python.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/1. INT/Base Conversion Calculator SOLUTIONS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/1. INT/Base Conversion Functions in Python.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/1. INT/Decimal to Binary.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/1. INT/Decimal to octal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/1. INT/decimal to hexa decimal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/1. INT/int.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/10. TUPLE/Pre-defined Function in tuple.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/10. TUPLE/tuple.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/11. SET/Pre-Defined Functions in set.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/11. SET/Problem Statement to be  Solved by set functions.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/11. SET/Set Category Data Types.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/11. SET/set.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/12. FROZENSET/Pre-Defined Functions in frozenset.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/12. FROZENSET/frozenset.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/13. DICT/Combination of dict with dict,set,tuple and list (2).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/13. DICT/Dict  Category Data Type.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/13. DICT/Pre-Defined functions in  dict (2).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/13. DICT/Problem Statement to be  Solved by set functions.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/14. NONE TYPE/NoneType Category Data Type.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/2. FLOAT/float.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/3. BOOL/bool.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/4. COMPLEX/complex.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/5. STRING/Examples window on String handling-2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/5. STRING/Memory Mgmt Diagram for str data.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/5. STRING/Operations on str data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/5. STRING/String Handling Part-2 with Explanation.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/5. STRING/sequance category data types.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/5. STRING/str.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/6. BYTES/bytes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/6. BYTES/sequance category data types.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/7. BYTEARRAY/bytearray.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/7. BYTEARRAY/sequance category data types.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/8. RANGE/range.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/8. RANGE/sequance category data types.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/9. LIST/Inner OR Nested List.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/9. LIST/List Category Data Types.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/9. LIST/Memory  Management of Inner List.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/9. LIST/Pre-Defined Functions in list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/9. LIST/list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/DATA TYPES NOTES/Data types in Python.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DATA TYPES/PYTHON CONTENT/CORE AND ADV.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/DISPLAY RESULT/Display the Result of Python program.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/COMBINED PRO EXAMPLES/DigitsSumEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/COMBINED PRO EXAMPLES/DigitsSumEx2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/COMBINED PRO EXAMPLES/FactorsEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/COMBINED PRO EXAMPLES/PerfectNumberEx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/COMBINED PRO EXAMPLES/PerfectNumberEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/COMBINED PRO EXAMPLES/ValueReverseEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/COMBINED PRO EXAMPLES/ValueReverseEx2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/COMBINED PRO EXAMPLES/ValueReverseEx3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/CONDITIONAL STATEMENTS NOTES/Conditional OR Selection OR Branching Statement.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/IF ELIF ELSE STATEMENT/Digits.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/IF ELIF ELSE STATEMENT/DigitsAnother.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/IF ELIF ELSE STATEMENT/IfElIFStmtEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/IF ELIF ELSE STATEMENT/IfElIFStmtEx2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/IF ELIF ELSE STATEMENT/flow chart for if..elif ..selse stmt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/IF ELIF ELSE STATEMENT/if..elif..else stmt  concept and syntax (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/IF ELIF ELSE STATEMENT/if..elif..else stmt  concept and syntax.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/IF ELSE STATEMENT/IfElseStmtEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/IF ELSE STATEMENT/IfElseStmtEx2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/IF ELSE STATEMENT/Moviee.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/IF ELSE STATEMENT/if else statement concept and syntax.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/MATCH CASE STATEMENTS/EmployeePaySlip.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/MATCH CASE STATEMENTS/MATCH CASE STATEMENTS NOTES/match case statement.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/MATCH CASE STATEMENTS/MatchCaseEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/MATCH CASE STATEMENTS/MatchCaseEx2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/MATCH CASE STATEMENTS/MatchCaseEx3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/MATCH CASE STATEMENTS/MatchCaseEx4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/MATCH CASE STATEMENTS/MatchCaseEx5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/SIMPLE IF STATEMENT/Simple if statement syntax Explanation and flow chart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/SIMPLE IF STATEMENT/SimpleIfEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/SIMPLE IF STATEMENT/SimpleIfStmtEx2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/SIMPLE IF STATEMENT/SimpleIfStmtEx3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/CONDITIONAL LOOPS/SIMPLE IF STATEMENT/SimpleIfStmtEx4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/FLOW CONTROL INDEX/Flow Control Statements in Python.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/FLOW CONTROL INDEX/Index of flow controls.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/FOR..ELSE LOOP/DigitsSumEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/FOR..ELSE LOOP/DigitsSumEx2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/FOR..ELSE LOOP/FOR LOOP NOTES/for loop CONCEPT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/FOR..ELSE LOOP/FactorsEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/FOR..ELSE LOOP/ForLoopEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/FOR..ELSE LOOP/ForLoopEx2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/FOR..ELSE LOOP/ForLoopEx3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/FOR..ELSE LOOP/PerfectNumberEx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/FOR..ELSE LOOP/PerfectNumberEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/FOR..ELSE LOOP/ValueReverseEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/FOR..ELSE LOOP/ValueReverseEx2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/FOR..ELSE LOOP/ValueReverseEx3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/WHILE...ELSE  LOOP/WHILE LOOP FLOW CHART.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/WHILE...ELSE  LOOP/WHILE LOOP NOTES/Looping OR Iterative OR Repetative Stataments.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/WHILE...ELSE  LOOP/WHILE LOOP SYNTAX AND EXPLANATION.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/WHILE...ELSE  LOOP/WhileLoopEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/WHILE...ELSE  LOOP/WhileLoopEx2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/WHILE...ELSE  LOOP/WhileLoopEx3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/WHILE...ELSE  LOOP/WhileLoopEx4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/WHILE...ELSE  LOOP/WhileLoopEx5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/WHILE...ELSE  LOOP/WhileLoopEx6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/WHILE...ELSE  LOOP/WhileLoopEx7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/WHILE...ELSE  LOOP/WhileLoopEx8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/LOOPING STATEMENTS/WHILE...ELSE  LOOP/WhileLoopEx9.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/BREAK STATEMENT/BRAEK STATEMENT NOTES/break statement.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/BREAK STATEMENT/BreakEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/BREAK STATEMENT/BreakEx2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/BREAK STATEMENT/BreakEx3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/BREAK STATEMENT/BreakEx4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/BREAK STATEMENT/BreakEx5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/BREAK STATEMENT/BreakEx6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/BREAK STATEMENT/BreakEx7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/CONTINUE STATEMENT/CONTINUE STATEMENT NOTES/continue statement.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/CONTINUE STATEMENT/ContinueStmtEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/CONTINUE STATEMENT/ContinueStmtEx2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/CONTINUE STATEMENT/ContinueStmtEx3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/CONTINUE STATEMENT/ContinueStmtEx4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/CONTINUE STATEMENT/ReadValuesEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/CONTINUE STATEMENT/ReadValuesEx2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/CONTINUE STATEMENT/ReadValuesEx3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/CONTINUE STATEMENT/ReadValuesEx4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/PASS STATEMENT/pass keyword.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/RETURN STATEMENT/its explained in functions.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FLOW CONTROLS/TRANSFER FLOW STATEMENTS/TRANSFER FLOW INDEX/Transfer Flow Statements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FUNDAMENTAL CONVERSIONS/bool().txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FUNDAMENTAL CONVERSIONS/complex().txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FUNDAMENTAL CONVERSIONS/float().txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FUNDAMENTAL CONVERSIONS/int().txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/FUNDAMENTAL CONVERSIONS/str().txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/INPUT STATEMENTS/Reading the Input from Key Board Dynamically.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/MUTABLE AND IMMUTABLE/Mutable and Immutable Objects.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/ARITHMATIC OPERATORS/ARITHAMATIC OPERATOR NOTES/Arithmetic Operators.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/ARITHMATIC OPERATORS/ArithmeticOperatorsEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/ARITHMATIC OPERATORS/ArithmeticOperatorsEx2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/ASSIGNMENT OPERATORS/ASSIGNMENT OPERATORS NOTES/Assigment Operator.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/ASSIGNMENT OPERATORS/AssignmentOpEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/ASSIGNMENT OPERATORS/AssignmentOpEx2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/ASSIGNMENT OPERATORS/AssignmentOpEx3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/ASSIGNMENT OPERATORS/AssignmentOpEx4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/BITWISE OPERATORS/BITWISE OPERATORS NOTES/Bitwise AND Operator.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/BITWISE OPERATORS/BITWISE OPERATORS NOTES/Bitwise Complement Operator.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/BITWISE OPERATORS/BITWISE OPERATORS NOTES/Bitwise Left Shift Operator.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/BITWISE OPERATORS/BITWISE OPERATORS NOTES/Bitwise OR Operator.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/BITWISE OPERATORS/BITWISE OPERATORS NOTES/Bitwise Operators.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/BITWISE OPERATORS/BITWISE OPERATORS NOTES/Bitwise RightShift Operator.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/BITWISE OPERATORS/BITWISE OPERATORS NOTES/Bitwise XOR Operator.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/BITWISE OPERATORS/Diagram for Bitwise Left Shift Operator.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/BITWISE OPERATORS/Diagram for Bitwise Right Shift Operator.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/IDENTITY OPERATORS/IDENTITY OPEARATORS NOTES/Identity Operators.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/LOGICAL OPERATORS/LOGICAL OPERATORS NOTES/Logical Operators.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/MEMBERSHIP OPERATORS/MEMBERSHIP OPERATORS NOTES/Membership Operators.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/Operators and Expressions.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/RELATIONAL OPERATORS/Relational Operators.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/RELATIONAL OPERATORS/RelationalOperators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/TERNARY OPERATORS/BigTwoEx1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/TERNARY OPERATORS/BigTwoEx2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/TERNARY OPERATORS/EvenOdd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/TERNARY OPERATORS/EvenOddPos.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/TERNARY OPERATORS/Flow Chart for Python Ternary Operator.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/TERNARY OPERATORS/Palindrome.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/TERNARY OPERATORS/PosNegZero.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/TERNARY OPERATORS/Python Ternary Operator.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/OPERATORS/TERNARY OPERATORS/Vowelornot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/TYPE CASTING TECHNIQUIES/Type Casting Techniques in Python.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MY_TEACHING/TYPE CASTING TECHNIQUIES/Type casting data types.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UI_Technologies/HTML/HTML_4/15.Forms/Python.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UI_Technologies/HTML/HTML_4/15.Forms/Resume mounika.pdf" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2i16DmC8nE85p8DqABtpCdoOhFu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-48aec45f0201-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17011.127" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6759656-9c03-4c79-b8a4-d012598a11e4" name="Changes" comment="" />
+      <created>1718645618574</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718645618574</updated>
+    </task>
+    <servers />
+  </component>
+</project>

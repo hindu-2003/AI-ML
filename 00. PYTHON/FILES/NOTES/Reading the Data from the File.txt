@@ -1,0 +1,20 @@
+			=======================================================
+						Reading the Data from the File
+			=======================================================
+=>To read the Data from the File, we have 2 Pre-Defined Functions present in File Pointer object. They are
+
+			1. read()
+			2. readlines()
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. read()
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Syntax:  varname=FilePointerObj.read()
+=>This Function is used for reading entire Data of the File and Placed in LHS Varname in the form str.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. readlines()
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Syntax:	varname=FilePointerObj.readlines()
+=>This Function is used for reading the entire data of the file Placed in LHS Varname in the form of list
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE: The above Two Functions Reads the Data from  the file in the form of Value by Value (It is one of the Limitation--we 
+            want all the values to read at a time from File)

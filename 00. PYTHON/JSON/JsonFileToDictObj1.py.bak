@@ -1,0 +1,5 @@
+#JsonFileToDictObj1.py
+import json
+with open ("D:\\My\\PYTHON\\LEARN-PYTHON\\JSON\\ST.json","r")as fp:
+	d=json.load(fp)
+	print(d,type(d))

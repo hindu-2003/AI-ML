@@ -1,0 +1,23 @@
+				=====================================================
+						Number of Approaches to Define Function
+				=====================================================
+#ApproachEx1.py
+#INPUT  : Taken from Function Call
+#PROCESS: Done in Function Body
+#RESULT : Function Call
+--------------------------------------------------------------------------
+#ApproachEx2.py
+#Input:  Taken Inside of Function Body
+#Process: Done in Function Body
+#Output: Displayed in Function Body
+---------------------------------------------------------------------------
+#ApproachEx3.py
+#Input:  Taken from Function Call
+#Process:  Done in Function Body
+#Output: Displayed in Function Body
+---------------------------------------------------------------------------
+#ApproachEx4.py
+#Input : Taken Inside of Function Body
+#Process: Done in Function Body
+#Output:  Function Call
+----------------------------------------------------------------------------

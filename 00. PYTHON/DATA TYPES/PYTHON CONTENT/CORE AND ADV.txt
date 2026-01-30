@@ -1,0 +1,808 @@
+==================================================
+Python Syllabus
+==================================================
+Module-1 Introduction to Python Programming
+What is Programming Language?
+What is Python?
+Where is Python used?
+Desktop GUI (Graphical User Interface)
+Web and Internet Development (IoT – Internet of Things)
+Games and 3D Graphics
+Scientific and Numeric Applications
+Machine Learning and Artificial Intelligence
+Data Science and Data Visualization
+Cyber Security
+Cloud Computing
+Enterprise Applications (Such as e-commerce, ERP, and many more.)
+Network Programming
+Embedded Applications
+Audio and Video Applications
+Learning/Education Applications
+CAD (Computer-Aided Designing) Applications
+Software Testing / Writing automated tests
+Python for DevOps / System administration / Writing automation scripts.
+
+==================================================
+Why Python?
+==================================================
+Python vs Other Languages
+Why Python for Machine Learning, AI & Data Science
+History of Python
+Python 3 versus Python 2
+Features of Python
+Simple
+Easy to learn
+Free and Open Source
+High Level and Programming Language
+Dynamically Typed
+Procedure and Object Oriented
+Portable/Platform Independent/Cross Platform
+Interpreted
+Multiparadigm
+Extensible
+Extensive Libraries
+Embedded
+Garbage Collection
+Limitations of Python
+Performance wise not good
+Not using for Mobile Applications
+Flavors of Python
+PyPy
+Anaconda Python
+CPython
+Jython or JPython
+IronPython
+RubyPython
+StacklessPython
+MicroPython
+Installing Python 3.x on Windows, Linux, Ubuntu
+Set environment variable
+Introduction to IDE’s
+Installing Python IDEs
+Python IDLE
+PyCharm
+IntelliJ
+Anaconda
+Visual Studio Code
+Key Takeaways
+
+===============================================================
+Module-2 Python Programming Language Fundamentals or Python Basics
+===============================================================
+My first Program in Python
+Execute Python programs using Interactive mode and script mode.
+Creating Python program file
+Printing in Python
+Print
+Type
+Id
+Python Identifiers
+What is identifier?
+Identifier naming rules in python
+What are the allowed characters?
+Not Start with Digit
+Identifiers are case sensitive
+Lines and Indentation
+Comments in Python
+Purpose/use of comments in Python/Computer Programming
+Comments for Understanding Python code
+Python Comment Syntax
+Python Single line comment
+Multiline comment in Python
+Writing Python comments
+Quotation in Python
+What is Quotation in Python?
+Single & Double Quotes
+Triple Quotes
+Literals in Python
+String literals
+Escape Characters
+Numeric literals
+Boolean literals
+Literal Collections
+Special literals
+Python Keywords or Reserved Keywords
+Python keywords define the syntax and structure of the Python language
+Python keywords are case sensitive
+Module-3 Data Types
+What is Data type?
+What are Data Types in Python?
+Different between Fundamental versus immutability
+Fundamental Data Types
+Integer
+Decimal Form
+Binary Form
+Octal Form
+Hexa Decimal Form
+Base conversions
+Float
+Complex
+Real part
+Imaginary part
+Boolean
+True
+False
+String
+What is string?
+String slicing
+Type conversions or Type Casting
+Implicit conversion
+Explicit Conversion
+int()
+float()
+complex()
+bool()
+str()
+Immutability Data types
+bytes
+bytearray
+range
+list
+tuple
+set
+frozenset
+dict
+None
+
+======================================
+Module-4 Operators
+======================================
+
+Arithmetic operators
+Addition
+Subtraction
+Multiplication
+Division operator
+Modulo operator
+Floor Division operator
+Exponent operator or power operator
+Relation Operators or Comparison operators
+Greater than
+Greater than or Equal
+Less than
+Less than or Equal
+Equality operators
+Equal to operator
+Not equal to operator
+Logical Operators
+And
+Or
+Not
+Bitwise Operators
+Bitwise AND operator
+Bitwise OR operator
+Bitwise XOR operator
+Bitwise NOT operator
+Shift Operators
+Left shift Operator
+Right shift Operator
+Assignment Operators
+Assigns operator
+Ternary Operator
+Identity Operators
+Is
+Is not
+Membership operators
+In
+Not in
+Operators Precedence
+Input and Output Statements
+Reading dynamic input from the keyword
+raw_input()
+input()
+eval()
+Output Statements
+print()
+Command Line Arguments
+What is command line argument in Python?
+
+==============================================================
+Module-5 Decision Making or Flow Control Statements
+==============================================================
+Conditional Statements
+If
+Elif
+Else
+Nested-if
+Nested loops
+Loops Statements or Iterative Statements
+For loop
+While loop
+Range () function
+Loops with else block
+Looping through lists
+Looping through strings
+Looping through dictionaries
+Infinite Loops
+Nested Loops
+Branching statements
+Transfer Statements or Loop control Statements
+Break
+Continue
+Pass
+Del Statement
+Different between del and None
+Module-6 Data Structures
+Strings
+
+What is string?
+
+How to define multi-line string literals
+
+How to access characters of a string?
+
+By using index
+By using slice operator
+Behaviour of slice operator
+In forward direction
+In backword direction
+Mathematical operators for string
+
+len()
+checking membership
+comparison of strings
+removing spaces from the string
+
+finding substrings
+
+for forward direction
+find()
+index()
+for backward direction
+rfind()
+rindex()
+Counting substring in the given string
+
+Replacing a string with another string
+
+Splitting of strings
+
+Joining of strings
+
+Changing case of a string
+
+Checking starting and ending part of the string
+
+To check type of characters present in string
+
+isalnum()
+isalpha()
+isdigit()
+islower()
+isupper()
+istitle()
+isspace()
+Formatting the string
+
+Important programs rEgarding string concept
+
+Key Takeaways
+========
+Lists
+========
+What is list?
+
+How to create list objects?
+
+Empty list
+
+Create list with some values
+
+Create list with dynamic inputs
+
+With list() function
+
+With split() function
+
+Accessing elements of list
+
+By using index
+
+By using slice operator
+
+List vs mutability
+
+Traversing the elements of list
+
+By using while loop
+
+By using for loop
+
+To display only even numbers
+
+To display elements by index wise
+
+Important functions of list
+
+To get information about list
+
+Len()
+
+Count()
+
+Index()
+
+Manipulating elements of list
+
+Append()
+
+Insert()
+
+Difference between append() and insert()
+
+Extend()
+
+Remove()
+
+Pop()
+
+Difference between remove() and pop()
+
+Ordering elements of list
+
+Reverse()
+
+Sort()
+
+To sort in reverse of default natural sorting order
+
+Aliasing and cloning of list objects
+
+By using slice operator
+
+By using copy() function
+
+Difference between = operator and copy() function
+
+Using mathematical operators for list objects
+
+Concatenation operator(+)
+
+Repetition operator(*)
+
+Comparing list objects
+
+Membership operators
+
+Clear() function
+
+Nested lists
+
+Nested list as matrix
+
+List comprehensions
+
+Key Takeaways
+
+
+================
+Tuple
+================
+What is tuple?
+
+How to create empty tuple?
+
+Tuple() function
+
+Accessing elements of tuple
+
+By using index
+
+By using slice operator
+
+Tuple vs immutability
+
+Mathematical operators for tuple
+
+Concatenation(+)
+
+Repetition operator
+
+Important functions of tuple
+
+Len()
+
+Count()
+
+Index()
+
+Sorted()
+
+Min () and max () functions
+
+Cmp()
+
+Tuple packing and unpacking
+
+Tuple comprehension
+
+Difference between list and tuple
+
+Key Takeaways
+=========
+Set
+=========
+What is set?
+
+How to create set objects?
+
+Important functions of set
+
+Add()
+
+Update()
+
+What is different add() and update()
+
+Sort()
+
+Pop()
+
+Remove()
+
+Discard()
+
+Clear()
+
+Mathematical operators on the set
+
+Union()
+
+Intersection()
+
+Difference()
+
+Symmetric_difference()
+
+Membership operators(in, not in)
+
+Set comprehension
+
+Set objects wont support indexing and slicing
+
+Key Takeaways
+
+================
+Dictionary
+================
+What is dictionary?
+
+How to create dictionary?
+
+How to access data from the dictionary?
+
+How to update dictionaries?
+
+How to delete elements from dictionary?
+
+del_d[key]
+
+d.clear()
+
+del.d()
+
+Important functions of dictionary
+
+dict()
+
+len()
+
+clear()
+
+get()
+
+pop()
+
+popitem()
+
+keys()
+
+values()
+
+items()
+
+copy()
+
+setdefault()
+
+update()
+
+Dictionary comprehension
+
+Arrays
+==============================================================
+Module-7 Functions
+==============================================================
+What is function?
+Advantages of functions
+Syntax and Writing function
+Types of functions?
+Built in Functions
+Id()
+Type()
+Input()
+Print()
+Eval()
+User Defined Functions
+Syntax to create user defined functions
+Parameters
+Return Statement
+Returning multiple values from a function
+Types of arguments in function
+Default Arguments
+Keyword Arguments
+Arbitrary arguments or variable length arguments
+Positional Arguments
+‘pass’ keyword in functions
+Types of Variables
+Global Variables
+Local Variables
+Global Keyword
+Recursive Functions
+Anonymous Functions
+Normal Function
+Lambda Function
+Syntax of lambda function
+Map
+Filter
+Zip
+Reduce
+Function Aliasing
+Nested functions
+What is the difference between the following lines?
+f1=outer
+f1=outer()
+Function Decorators
+Decorator Chaining
+Generators
+Advantages of generators function
+Generators vs Normal Collections wrt performance
+Generators vs Normal Collections wrt memory utilization
+Monkey patching
+==============================================================
+Module-8 Python Modules
+==============================================================
+What is Modules in Python?
+What is from and import?
+Module aliasing?
+Various possibilities of import
+Member aliasing
+Reloading a Module
+What is dir() function?
+The special variable name
+Working with math module
+Working with random module
+Random()
+Randint()
+Uniform()
+Randrange([start],stop,[step])
+Choice()
+==============================================================
+Module-9 Python Packages
+==============================================================
+What is packages?
+
+
+==============================================================
+Module-10 Python Libraries
+==============================================================
+What is Libraries?
+
+
+
+
+
+
+
+						==============================================================
+													Advanced python
+						==============================================================
+
+
+================
+Module-11 OOPs
+================
+What is OOPs?
+Procedural v/s Object oriented programming
+What is Class
+How to define a Class?
+What is Object?
+What is reference variable
+Self variable
+Constructor concept
+Differences between methods and constructors
+Types of variables
+Instance variables (Object level variables)
+Where we can declare instance variables
+Inside Constructor by using self variable
+Inside Instance Method by using self variable
+Outside of the class by using object reference variable
+How to access instance variables
+How to delete instance variable from the object
+Static variable (Class level variables)
+Instance variable vs static variable
+Various places to declare static variables
+How to access static variables
+Where we can modify the value of static variable
+If we change the value of static variable by using either self or object reference variable
+How to delete static variables of a class
+Local variables (Method level variables)
+Types of methods
+Instance Methods
+Setter and getter methods
+Setter method
+Getter method
+Class Methods
+Static Methods
+Passing members of one class to another class
+Inner classes
+Garbage Collection
+What is garbage collection?
+How to enable and disable Garbage Collector in our program
+gc.isenabled()
+gc.disable()
+gc.enable()
+Destructors
+How to find the number of references of an object
+Polymorphism
+Duck Typing Philosophy of Python
+Overloading
+What is overloading
+Operator Overloading
+Method Overloading
+Constructor Overloading
+Constructor with Default Arguments
+Method overriding
+Inheritance
+Data Abstraction
+Encapsulation
+==============================================================
+Module-12 Exception Handling (https://www.youtube.com/watch?v=V8DEEDhoL14&list=PLxoOrmZMsAWxY-CN9duhjulZBcozx_tZE)
+==============================================================
+What is exception?
+
+Types of Errors
+Syntax Errors
+Runtime Errors
+Default exception handling in Python
+Python Exception handling hierarchy
+Customized Exception Handling by using try-except
+Control flow in try-except
+How to print exception information
+Try with multiple except blocks
+Single except block that can handle multiple exceptions
+Default except block
+Finally block
+Control flow in try-except-finally
+Nested try-except-finally blocks
+Control flow in nested try-except-finally
+Else block with try-except-finally
+Various possible combinations of try-except-else-finally
+Types of exceptions
+Predefined exceptions
+User defined exceptions
+How to define and raise customized exceptions
+==============================================================
+Module-13 Python Logging
+==============================================================
+Logging the exceptions
+Logging Levels
+How to implement logging
+How to write python program exceptions to the log file
+==============================================================
+Module-14 Python Debugging by using assertions
+==============================================================
+Debugging Python program by using assert keyword
+Types of assert statements
+Simple version
+Augmented version
+Exception handling vs assertions
+==============================================================
+Module-15 File Handling
+==============================================================
+What is file handling
+Types of files
+Text files
+Binary files
+Opening a file
+F=open(filename, mode)
+F=open(“sample.txt”,”w”)
+Closing a file
+F.close()
+Various properties of file object
+Writing data to text files
+Reading character data from text files
+The with statement
+The seek() and tell() methods
+How to check a particular file exists or not?
+Handling binary data
+Handling csv files
+Zipping and unzipping files
+To create zip file
+To perform unzip operations
+Working with directories
+Current Working Directory
+To create a sub directory in the current working directory
+To create a sub directory in mysub directory
+To create multiple directories like sub1 in that sub2 in that sub3
+To remove a directory
+To remove multiple directories in the path
+To rename a directory
+To know contents of directory
+To know contents of directory including sub directories
+What is the difference between listdir() and walk() functions?
+Running Other programs from Python program
+How to get information about a File
+Pickling and unpickling of objects
+==============================================================
+Module-16 Multi-Threading
+==============================================================
+What is multi tasking?
+Types of multi tasking
+Process based Multi Tasking
+Thread based Multi Tasking
+The ways of creating thread in python
+Creating a Thread without using any class
+Creating a Thread by extending Thread class
+Creating a Thread without extending Thread class
+Setting and getting name of a thread
+Thread Identification Number (ident)
+active_acount()
+enumerate() function
+isAlive()
+join() method
+Daemon Threads
+Default nature
+Synchronization
+Synchronization by using lock concept
+Problem with simple lock
+Difference between lock and RLock
+Synchronization by using Semaphore
+BoundedSemaphore
+Difference between lock and semaphore
+Inter thread communication
+Interthread communication by using Event Objects
+Methods of event class
+Pseudo code
+Interthread communication by using Condition Object
+Methods of condition
+Interthread communication by using Queue
+Important Methods of Queue
+Types of Queues
+FIFO Queue
+LIFO Queue
+Priority Queue
+Good Programming Practices with usage of Locks
+==============================================================
+Module-17 Regular Expressions
+==============================================================
+What is regular expression?
+Some Important regular expressions functions
+Compile()
+Finditer()
+Character classes
+Pre defined character classes
+Qunatifiers
+Important functions of re module
+match()
+fullmatch()
+search()
+findall()
+finditer()
+sub()
+subn()
+split()
+compile()
+Symbols
+^ symbol
+$ symbol
+==============================================================
+Module-18 Web Scraping using regular expressions
+==============================================================
+What is web scraping?
+
+Some examples
+==============================================================
+Module-19 Python Database Programming
+==============================================================
+Identifiers

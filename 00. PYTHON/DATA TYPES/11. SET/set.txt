@@ -1,0 +1,97 @@
+			=========================================================
+							 set 
+			=========================================================
+Index
+-------------
+=>Purpose of set
+=>Notation for storing set Data
+=>Create an object of set
+=>Types of sets
+=>Memory Management of set
+=>Operations on set
+=>Pre-Defined Functions in set
+=>Inner tuple OR Nested sets
+=>Combination of list and tuple with set
+=>Programming Examples
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Properties of set
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+=>set is one of the pre-defined class and treated as Set data type.
+=>The purpose of set data type is that "To Store Multiple Values either of Same Type OR Different Type OR 
+     Both the Types with Unique Values in single Object (Duplcates are not allowed)".
+=>The Elements OR Values of set must stored within Curly Braces and those values separated   by comma.
+=>Syntax:   varname={Val1,Val2,...,Val-n}
+=>An object of set never maintains Insertion order bcoz PVM displays any one of the Posibility of set Elements.
+=>On the Object of set, we can't  perform Indexing and Slicing Operations bcoz Set never Maintains Insertion Order
+=>An object of set belongs to Both Mutable bcoz we can add,delete..etc at same address and Immutable bcoz set 
+    obejct does not support Item Assigment.
+=>In Python Programming, we can Two types of set objects. they are
+			1. Empty Set
+			2. Non-Empty Set
+-------------------------------
+1. Empty Set
+-------------------------------
+=>An Empty set is one, which does not contains any Elements and whose length is 0
+=>Syntax:    setobj=set()
+-------------------------------
+2. Non-Empty Set
+-------------------------------
+=>Non-Empty Set is one, which  contains Elements and whose length is >0
+=>Syntax1:    setobj={Val1,Val2,-----,Val-n}
+=>Syntax2:    setobj=set(object) # here object is Iterable(Contains More than one Element)
+=>Syntax3:    setobj=set([object]) # here object is Non-Iterable(Contains  one Element)
+=>Syntax4:    setobj=set((object,))  # here object is Non-Iterable(Contains  one Element)
+=>Syntax5:    setobj=set({object})  # here object is Non-Iterable(Contains  one Element)
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Examples
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> s1={10,20,30,40,50,60,10}
+>>> print(s1,type(s1))------------{50, 20, 40, 10, 60, 30} <class 'set'>
+>>> s2={10,"DR",34.56,True,2+3j,"Python"}
+>>> print(s2,type(s2))------------{True, 34.56, 'DR', 'Python', 10, (2+3j)} <class 'set'>
+---------------------------------
+>>> s1={10,20,30,40,50,60,10}
+>>> print(s1,type(s1))-------{50, 20, 40, 10, 60, 30} <class 'set'>
+>>> s1[0]---------------TypeError: 'set' object is not subscriptable
+>>> s1[0:3]-------------TypeError: 'set' object is not subscriptable
+--------------------------------------
+>>> s1={10,20,30,40,50,60,10}
+>>> print(s1,type(s1))-----------{50, 20, 40, 10, 60, 30} <class 'set'>
+>>> s1[0]=100----------------------TypeError: 'set' object does not support item assignment
+-----------
+>>> s1={10,20,30,40,50,60,10}
+>>> print(s1,type(s1),id(s1))------------{50, 20, 40, 10, 60, 30} <class 'set'> 2598485172832
+>>> s1.add("Python")
+>>> print(s1,type(s1),id(s1))------------{50, 20, 'Python', 40, 10, 60, 30} <class 'set'> 2598485172832
+>>> s1.remove(50)
+>>> print(s1,type(s1),id(s1))-------------{20, 'Python', 40, 10, 60, 30} <class 'set'> 2598485172832
+------------------------------
+>>> lst=[10,20,30,40,10,20,30,40,50]
+>>> print(lst,type(lst),len(lst))-----------[10, 20, 30, 40, 10, 20, 30, 40, 50] <class 'list'> 9
+>>> s=set(lst)
+>>> print(s,type(s),len(s))-----------------{40, 10, 50, 20, 30} <class 'set'> 5
+>>> s1="MISSISSIPPI"
+>>> print(s1,type(s1),len(s1))-------------MISSISSIPPI <class 'str'> 11
+>>> s2=set(s1)
+>>> print(s2,type(s2),len(s2))-------------{'P', 'I', 'M', 'S'} <class 'set'> 4
+>>> s2=set((10,10,10,10,20,20,20,30,30,40,30))
+>>> print(s2,type(s2),len(s2))------------{40, 10, 20, 30} <class 'set'> 4
+---------------------------
+>>> a=10
+>>> print(a,type(a))-------------10 <class 'int'>
+>>> s=set(a)------------------TypeError: 'int' object is not iterable
+>>> s=set([a])
+>>> print(s,type(s),len(s))--------{10} <class 'set'> 1
+----------------------
+>>> a=10
+>>> print(a,type(a))----------------10 <class 'int'>
+>>> s=set((a))------------------------TypeError: 'int' object is not iterable
+>>> s=set((a,))
+>>> print(s,type(s),len(s))---------{10} <class 'set'> 1
+----------------------------
+>>> x={10}
+>>> print(x,type(x),len(x))---------{10} <class 'set'> 1
+>>> s=set({True})
+>>> print(s,type(s))----------------{True} <class 'set'>
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+

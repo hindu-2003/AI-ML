@@ -1,0 +1,2222 @@
+# Functions
+Functions Content:
+- What is function?
+
+![image](https://github.com/ProBattu/AB_UI_Python_MySQL/assets/147540406/a727a0b0-960b-4eb1-90b5-5108f7a91891)
+
+- Types of functions
+  - Built in Functions 
+  - User Defined Functions
+    
+- Parameters
+  
+- Return Statement
+- Returning multiple values from a function
+- Types of arguments
+  - Positional arguments
+  - Keyword arguments
+  - Default arguments
+  - Variable length arguments
+ 
+    
+- Types of Variables
+  - Global Variables
+  - Local Variables
+- Global keyword
+- Recursive Functions
+- Anonymous Functions
+- Normal Function
+- lambda Function
+
+  
+- Syntax of lambda Function
+- filter() function
+- map() function
+- reduce() function
+- Function Aliasing
+- Nested Functions
+- Function Decorators
+- Decorator Chaining
+- Generators
+  - Advantages of Generator Functions
+  - Generators vs Normal Collections wrt performance
+  - Generators vs Normal Collections wrt Memory Utilization
+
+
+### What is function?
+
+If a group of statements is repeatedly required then it is not recommended to write these statements everytime seperately.
+We have to define these statements as a single unit and we can call that unit any number of times based on our requirement without rewriting.
+
+This unit is nothing but function.
+
+The main advantage of functions is code Reusability.
+
+A function is a block of code which only runs when it is called.
+
+You can pass data, known as parameters, into a function.
+
+A function can return data as a result.
+
+**Note:** In other languages functions are known as methods,procedures,subroutines etc
+
+### Types of functions
+Python supports 2 types of functions
+1. Built in Functions
+  >- built in function nothing but By Default python software automatecally
+
+     >  https://blog.hubspot.com/website/python-built-in-functions#call
+
+2.User Defined Functions.
+
+   >In Python a function is defined using the def keyword
+
+3.- Parameters
+**A parameter is the variable listed inside the parentheses in the function definition.**
+
+4.Arguments
+
+**Arguments are specified after the function name, inside the parentheses**
+
+**You can add as many arguments as you want, just separate them with a comma.**
+
+**The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:**
+
+```
+def my_function(fname):
+  print(fname + " family ")
+
+my_function("Mahi")
+my_function("Runa")
+my_function("Soumya")
+
+output:
+Mahi family
+Runa family
+Soumya family
+```
+
+Example 1:
+```
+
+def m(fname):
+  print(fname + " family")
+
+m("Mahi")
+m("Runa")
+m("Soumya")
+
+output:
+Mahi family
+Runa family
+Soumya family
+```
+
+Now we are tried once oparators
+
+```
+Example 2
+now we are multiplication,division,addition,percenatge are do in one program
+but different values,so dont need to wrote many times just we calling the function
+
+
+Lets see the Example
+
+def m(a,b):
+  print(a*b)
+  print(a/b)
+  print(a+b)
+  print(a % b)
+
+m(5,6)
+m(12,15)
+m(30,10
+
+Here, just we call the fn name is m and give values for a required result
+
+output:
+30
+0.8333333333333334
+11
+5
+180
+0.8
+27
+12
+300
+3.0
+40
+0
+```
+
+## parameters or Arugumenst ?
+
+**The terms parameter and argument can be used for the same thing: information that are passed into a function.**
+```
+From a function's perspective:
+
+A parameter is the variable listed inside the parentheses in the function definition.
+
+An argument is the value that is sent to the function when it is called.
+
+```
+
+**Now we are trying to at a time number of arguments**
+
+**By default, a function must be called with the correct number of arguments. Meaning that if your function expects 2 arguments, you have to call the function with 2 arguments, not more, and not less.**
+
+Example
+This function expects 2 arguments, and gets 2 arguments:
+```
+def m (mahi, soumi):
+  print(mahi + " " + soumi)
+
+m ("runa", "aruna")
+m ("swami","python")
+
+output:
+runa aruna
+swami python
+
+
+```
+>Here, two arguments are mahi,soumi then give 2 fns like runa and aruna
+```
+Write a program square for different arguments in finctions?
+def square(number):
+    print('the squeare of {} is:{}'.format(number,number**2))
+square(5)
+square(25)
+square(66)
+square(12)
+
+output:
+the squeare of 5 is:25
+the squeare of 25 is:625
+the squeare of 66 is:4356
+the squeare of 12 is:144
+
+```
+
+```
+Write a function given number is odd or even
+def even_odd(x):
+    if x % 2 == 0:
+        print("It is even number")
+    else:
+        print("It is odd number")
+        
+even_odd(int(input("Enter a number for check:-")))
+
+Enter a number for check :--55
+It is odd number
+```
+#### return importance
+```  
+def even_odd(x):
+    if x % 2 == 0:
+        return"It is even number"
+    else:
+        return"It is odd number"
+result = even_odd(55)
+print(result)
+
+output:
+
+It is odd number
+```
+##### sequence example
+```
+def show(sequence):
+    for x in  sequence:
+        print(x)
+show('soumya')
+show(range(2))
+
+output:
+
+s
+o
+u
+m
+y
+a
+0
+1
+``` 
+
+
+**This function expects 2 arguments, and gets 1 arguments:**
+its definately error
+```
+def m(mahi, soumi):
+  print(mahi + " " + soumi)
+
+m("runa")
+m("swami")
+
+output:
+TypeError: m() missing 1 required positional argument: 'soumi'
+```
+Another EXAMPLE
+```
+def add(num1: int, num2: int) -> int:
+    """Add two numbers"""
+    num3 = num1 + num2
+
+    return num3
+num1, num2 = 5, 15
+ans = add(num1, num2)
+print(f"The addition of {num1} and {num2} results {ans}.")
+
+OUTPUT:
+The addition of 5 and 15 results 20.
+
+```
+```
+#WAF to find factorial of given number
+def fact(n):
+    result = 1
+    while n>1:
+        result = result * n
+        n=n-1
+    return result
+
+print(fact(4))
+output:
+16
+
+```
+```
+#WAF to find factorial of given number
+def fact(n):
+    result = 1
+    while n>1:
+        result = result * n
+        n=n-1
+    return result
+
+for i in range(1,11):
+    print('The factorial of {} is :{}'.format(i,fact(i)) )
+output:
+The factorial of 1 is :1
+The factorial of 2 is :2
+The factorial of 3 is :6
+The factorial of 4 is :24
+The factorial of 5 is :120
+The factorial of 6 is :720
+The factorial of 7 is :5040
+The factorial of 8 is :40320
+The factorial of 9 is :362880
+The factorial of 10 is :3628800
+
+
+```
+```
+def calc(a,b):
+    sum = a+b
+    sub = a-b
+    mul = a*b
+    div = a/b
+    return sum,sub, mul,div
+t=calc(5,8)
+print(t)
+output:
+
+(13, -3, 40, 0.625)
+```
+
+#### Types of Python Function Arguments
+**4 types of Arguments**
+Python supports various types of arguments that can be passed at the time of the function call. In Python, we have the following 4 types of function arguments.
+```
+1.Positional arguments
+2.Keyword arguments (named arguments)
+3.Default arguments
+4.Arbitrary arguments[ variable-length arguments] 
+```
+**Let’s discuss each type in detail**
+
+### 1.Positional arguments
+**number of arguments are cumpulsory matched**
+**The order of arguments is important**
+```
+Example :
+def sub(a,b):
+    print(a-b)
+sub(10)
+
+output:
+  File "C:\Users\mahes\OneDrive\Desktop\test.py", line 3, in <module>
+    sub(10)
+TypeError: sub() missing 1 required ##positional## argument: 'b'
+
+```
+Here, we can observe a=10,b=20.
+as on proper  order
+### 2.keyword arguments
+---------------------
+**number of arguments are must be matched**
+**The order of arguments is not important**
+```
+Example :
+
+def sub(a,b):
+    print(a-b)
+sub(a=10,b=20)
+sub(b=20,a=10)
+
+output:
+-10
+-10
+```
+Here, we can observe a=10,b=20.
+as on any order 
+
+**Note** Both positional arguments and keyword arguments simultenouesly..
+```
+def sub(a,b):
+    print(a-b)
+sub(10,b=20)
+
+output:
+-10
+```
+Example 2
+```
+def sub(a,b):
+    print(a-b)
+sub(a=10,20)
+
+output:.
+               ^
+SyntaxError: positional argument follows keyword argument
+```
+```
+Example 4
+def wish(name,msg):
+    print('hello',name,msg)
+
+wish('mahesh','when will you become a coder')
+wish('mahesh',msg='when will you become a coder')
+wish(name='mahesh','when will you become a coder')
+wish(name='mahesh',msg="when will you become a coder")
+output:
+  File "C:\Users\mahes\OneDrive\Desktop\test.py", line 6
+    wish(name='mahesh','when will you become a coder')
+                                                     ^
+SyntaxError: positional argument follows keyword argument
+```
+now we are correction
+```
+def wish(name,msg):
+    print('hello',name,msg)
+
+wish('mahesh','when will you become a coder')
+wish('mahesh',msg='when will you become a coder')
+#wish(name='mahesh','when will you become a coder')
+wish(name='mahesh',msg="when will you become a coder")
+output:
+
+hello mahesh when will you become a coder
+hello mahesh when will you become a coder
+hello mahesh when will you become a coder
+
+```
+**positional argument follows keyword argument,but key word argument positional argument**
+
+
+
+### 3.Default Arguments
+
+**positional arguments and key word arguments we have to talk at the time of calling. default arguments at the time of declaration**
+
+**default arguments should be last arguments. i.e after default arguments we cannot take non defalult arguments.**
+
+**At the time of calling; positional and keyword arguments.**
+
+**After key word arguments we cannot taker positional arguments**
+
+                         **diff**
+                         
+**At the time of defination/declaration : default arguments**
+
+**After default arguments we cannot change non-default arguments**
+
+## Different Ways to Use Default Arguments in Python.
+
+**Default arguments in Python can be used with two types of arguments:**
+
+**With Keyword Arguments**
+
+**Without Keyword Arguments**
+
+**With Keyword Arguments**
+
+def div(numerator, denominator):
+
+    print(numerator/denominator)
+
+div(numerator=10, denominator =5) # 2.0
+
+div(denominator=5, numerator=10) # 2.0
+
+
+
+**Without Keyword Arguments**
+
+
+def div(numerator, denominator):
+
+    print(numerator/denominator)
+
+div(10,5) # 2.0
+
+div(5,10) # 0.5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Here valid the statements 
+
+```
+def wish(name='guest'):
+    print('hello',name,'good morning')
+
+wish()
+wish(name='mahesh')
+wish('mahesh')
+output:
+hello guest good morning
+hello mahesh good morning
+hello mahesh good morning
+```
+here just we calling thats can be consider as a defaultly 
+```
+def wish(name='guest',msg='good morning'):
+    print('hello',name,msg)
+
+wish('mahi')
+output:
+hello mahi good morning
+```
+
+
+## 4.Arbitrary arguments (variable-length arguments *args and **kwargs)
+
+> * represent length of arguments
+
+
+
+```
+def f(*x):
+    print('The no of argumentd passed:',len(x))
+
+f()
+f(10,20)
+f(0,"mahi",False)
+output:
+The no of argumentd passed: 0
+The no of argumentd passed: 2
+The no of argumentd passed: 3
+
+```
+```
+def sum(a,b):
+    print(len(x))
+```
+its not valid becauese its take n only which n means tuple
+**We can use normal arguments and variable length arguments simultaneosly.**
+
+**We can take variable length argument anywhere**
+
+**Example**
+```
+def sum(*s,n):
+    print(s)
+    print(n)
+sum(10,20,30,40,n=50)
+
+output:
+(10, 20, 30, 40)
+50
+```
+**After variable length argument, if we are taking any normal argument,  we are taking any normal argument, we should provide value by using keyword only.**
+```
+def sum(*s,n=10):
+    print(s)
+    print(n)
+sum(10,20,30,40,50,0)
+output:
+(10,20, 30, 40, 50, 0)
+10
+```
+
+**After default arguments, we cannot take normal arguments but we can take variable length arguments**
+
+```
+def sum(*m,*s):
+    print(s)
+    print(m)
+sum(10,20,30,40,50,0)
+ output:
+syntax error
+```
+**we cannot take more than one length arguments**
+
+
+# Revision
+
+**1.Positional arguments**
+>At the time of calling
+>Position (order)and number arguments important
+```
+def f1(a,b,c,d,e)
+  print(a,b,c,d,e)
+f1(10,20,30,40,50)
+``` 
+
+**2.Keyword arguments**
+> At the time of calling
+> by keyword (variable name)
+> The number of arguments importatnt
+> Bot order is not important
+
+```
+def f1(a,b,c,d,e)
+  print(a,b,c,d,e)
+f1(c=30,d=40,e=50,a=10,b=20,)
+its will become same output
+
+``` 
+> We can use positiomal and keyword arguments together.
+> first positional argument and then keyword argument
+> But after keyword arguments we cannot take positional arguments.
+
+```
+def f1(a,b,c,d,e)
+  print(a,b,c,d,e)
+f1(c=30,40,**e=50,a=10,b=20,**)
+these are not valid
+```
+
+**3.Default arguments**
+> At the time of declaration
+```
+def f1(a=10,b=20)
+  print(a,b)
+```
+> after defaeult arguments, we cannot take normal arguments, but we can take variable length arguments
+```
+
+def f1(a=10,b):
+  print(a,b)
+Error
+```
+```
+its valid
+def f1(a=10,*b):
+  print(a,b)
+```
+**4.variable length arguments**
+>At the time of declaration
+>we can take variable length arguments any where
+>but aftr varaible length argument if we are declaring any variable cumpulsory we should provioide value by keyword only
+```
+def f1(*a,b):
+  ptint(a)
+f1(10,20,b=30)
+```
+> here is only one variable length argument only one not more then it will be error
+
+
+
+### *args and **kwargs
+
+> *x ---> we can provide any number of values for x and x will become tuple.
+
+> **x --> we can pass any number of key value pairs and x will become dict. 
+
+> **kwargs
+
+
+```
+def display(**kwargs):
+    print(type(kwargs))
+    print(kwargs)
+display(name='mahesh',rollno=101,marks=60,gf1='sravya' )
+
+output:
+{'name': 'mahesh', 'rollno': 101, 'marks': 60, 'gf1': 'sravya'}
+```
+
+**Format change**
+```
+def display(**kwargs):
+    for m,n in kwargs.items():
+        print('{}={}'.format(m,n))
+display(name='mahesh',rollno=101,marks=60,gf1='sravya' )
+
+
+output:
+name=mahesh
+rollno=101
+marks=60
+gf1=sravya
+
+this is dict data to key value type
+```
+**Keyword arguments should be last arguments**
+
+## Rules to Remember
+
+**1.After keyword arguments we cannot take positional arguments.**
+
+**2.After default arguments, we cannot take normal arguments,but we can take variable lenght arguments**
+
+**3.After variable length arguments, if we are taking any normal argument, cumpulsory we should provide values by keyword only**
+
+**4.we can take only one variable length only not multiple**
+
+**5.Keyword arguments should be last arguments**
+
+
+
+Some examples
+```
+def f1(arg1,arg2,arg3=4,arg4=8):
+    print(arg1,arg2,arg3,arg4)
+
+#f1(3,2)--3 2 4 8
+#f1(10,20,30,40)--10 20 30 40
+#f1(25,50,arg4=4)--25 50 4 4
+#f1(arg3=4,arg1=8,arg2=4)--8 4 4 8
+#f1() missing 2 required positional arguments: 'arg1' and 'arg2'
+#f1(arg3=100,arg4=31,25,45)--SyntaxError: positional argument follows keyword argument
+#f1(4,5,arg2=9)--TypeError: f1() got multiple values for argument 'arg2'
+#f1(4,5,arg4=5,arg5=12)--TypeError: f1() got an unexpected keyword argument 'arg5'
+
+```
+
+## Types of variables/Varaible scopes
+
+**1.Global variables**
+**2.Local varaiable**
+
+
+
+**1.Global variables**
+**The varaibles which arer declared outside of the functions**
+
+
+```
+a=10
+def f1():
+    print(a)
+def f2():
+    print(a)
+f1()
+f2()
+
+output
+10
+10
+```
+a=10 is global its outside of function
+
+
+**2.Local varaiable**
+**Which are declared inside a function**
+**Available only for that function**
+
+
+```
+
+def f1():
+    a = 10
+    print(a)
+def f2():
+    print(a)
+f1()
+f2()
+output:
+NameError: name 'a' is not defined
+10
+
+```
+> Global==global to all functions
+> Local==Local to a particular function
+
+
+### Global key word
+
+
+```
+a = 10
+b = 20  #global varaiable
+def f1():
+    a=777     #Local varaiable
+    print(a)
+def f2():
+    print(a)
+def f3():
+    print(b)
+f1()
+f2()
+f3()
+
+output:
+777
+10
+20
+```
+**Make global varaibale to f1**
+
+
+```
+a = 10
+b = 20  #global varaiable
+def f1():
+    global a
+    a=777     #Local varaiable
+    print(a)
+def f2():
+    print(a)
+def f3():
+    print(a)
+f1()
+f2()
+f3()
+
+output:
+777
+777
+777
+```
+
+```
+
+a = 10
+b = 20  #global varaiable
+def f1():
+    global a=777     #make global varaiable
+    print(a)
+def f2():
+    print(a)
+def f3():
+    print(b)
+f1()
+f2()
+f3()
+
+output:
+Syntax Error
+```
+
+**1. To make global varaible availaable to the functions so that we can perform required modofications**
+
+**2. To declare global varaiables inside functions**
+
+
+## Recursive Functions
+
+**A Function that calls itself is known as Recursive Function.**
+if we want to 
+factorial(n)
+factorial(n)=n*(n-1)*(n-2)*(n-3)*...1---->normal
+
+factorial(n)=n*factorial(n-1)----->Recursive
+
+**1.We can reduce length of the code and improve readability**
+
+**2.We can solve very complex problems also very easily.**
+
+```
+def factorial(n):
+    if n==0:
+        result = 1
+    else:
+        result= n*factorial(n-1)
+    return result
+print(factorial(5))
+
+output:
+120
+
+```
+How it is working its mechanism
+```
+
+def factorial(n):
+    print('finding factorial of',n)
+    if n==0:
+        result = 1
+    else:
+        result= n*factorial(n-1)
+    print('completion of finding factorial of',n)
+    return result
+
+print('Factorial of n is:',factorial(5))
+
+output:
+finding factorial of 5
+finding factorial of 4
+finding factorial of 3
+finding factorial of 2
+finding factorial of 1
+finding factorial of 0
+completion of finding factorial of 0
+completion of finding factorial of 1
+completion of finding factorial of 2
+completion of finding factorial of 3
+completion of finding factorial of 4
+completion of finding factorial of 5
+Factorial of 5 is: 120
+```
+
+
+Now we are recursively it means not only once output this total mechanism is known as recursive functions
+
+```
+Example
+
+def factorial(n):
+    print('finding factorial of',n)
+    if n==0:
+        result = 1
+    else:
+        result= n*factorial(n-1)
+    print('completion of finding factorial of {} and result is{}'.format(n,result) )
+    return result
+
+print('Factorial of n is:',factorial(5))
+
+output:
+finding factorial of 5
+finding factorial of 4
+finding factorial of 3
+finding factorial of 2
+finding factorial of 1
+finding factorial of 0
+completion of finding factorial of 0 and result is1
+completion of finding factorial of 1 and result is1
+completion of finding factorial of 2 and result is2
+completion of finding factorial of 3 and result is6
+completion of finding factorial of 4 and result is24
+completion of finding factorial of 5 and result is120
+Factorial of 5 is: 120
+```
+
+## Anonymous / lambda functions
+
+> Nameless functions are called anonymous functions
+
+
+
+**Normal function**
+By using **def** keyword 
+function name : squareit
+
+```
+def squareit(n):
+  return n*n
+```
+**Anonymous Function**
+ By using **lambda** keyword
+```
+ lambda n:n*n
+lambda argumnet_list:expression
+
+```
+
+Example:
+```
+s = lambda n:n*n
+
+print(s(4))
+
+output:
+16
+```
+
+```
+multiple expresssions
+s = lambda a,b,c,d,e,f:a+b+c+d+e*f
+
+print(s(5,5,5,6,5,8,))
+
+output:
+61
+
+```
+```
+**Genarate the voter id 
+def generate_voter_id_code(name, dob):
+    # Extract initials from the name
+    initials = ''.join(word[0].upper() for word in name.split())
+
+    # Format date of birth to remove dashes
+    formatted_dob = dob.replace('-', '')
+
+    # Combine initials and formatted date of birth to create the voter ID code
+    voter_id_code = f"{initials}-{formatted_dob}"
+
+    return voter_id_code
+
+# Example 
+
+
+name = "John Doe"
+dob = "1990-01-15"
+voter_id = generate_voter_id_code(name, dob)
+print(f"Generated Voter ID Code: {voter_id}")
+
+```
+
+**Note**
+Multiple lines of lambda function is not possible always one line only..
+
+we can pass a function as argument to anoother function. In such as cases lambda functions are best choice.
+
+filter()
+map()
+reduce()
+
+#### filter()
+
+**To filter values from the given sequance based on some conditions**
+
+10 values from top 3 functions
+
+10 numbers filter only even numbers
+
+input=[0,1,2,3,4,5,6,7,8,9,10]
+
+[2,4,6,8,10]
+
+filter (function,sequance)
+
+Example 1
+```
+def is_even(n):
+    if n%2 == 0:
+        return True
+    else:
+        return False
+
+l=[0,5,15,20,25,30,55,54]
+output=list(filter(is_even,l))
+print(output)
+
+
+#output:--[0, 20, 30, 54]
+
+```
+NOw we have to do odd in tuple
+```
+def is_even(n):
+    if n%2 == 1:
+        return True
+    else:
+        return False
+
+l=(0,5,15,20,25,30,55,54)
+output=tuple(filter(is_even,l))
+print(output)
+
+
+#output:--(5, 15, 25, 55)
+```
+**Filter is used in only boolean type of functions**
+
+**this is used in list,tuple or any seqaunace functions**
+
+Example :--
+```
+def friends_in_trouble(j_angry,s_angry):
+    if (j_angry == True and s_angry == True):
+        return True
+    if (j_angry is False and s_angry is False):
+        return True
+    return False
+
+output:
+False
+True
+```
+Example 2: Function with Return Value
+```
+def square(number):
+    return number ** 2
+
+result = square(5)
+print(result)
+
+output
+
+25
+```
+Example 3: Function with Default Parameter
+```
+def power(base, exponent=2):
+    return base ** exponent
+
+
+result1 = power(5)
+result2 = power(3, 4)
+
+print(result1)
+print(result2)
+
+output:
+25
+81
+```
+
+## 2. map() functions
+filter()
+  input:10 elements
+  output:10 or less
+
+map()
+    input:10 elements
+    output:10 elements
+
+**for every input value, generate value based on some operations**
+
+Example 
+increment 10% salary for every employee
+
+```
+
+def squareit(n):
+    return n*n
+
+l=[1,2,3,4,5,6,7,8,9]
+m=list(map(squareit,l))
+print(m)
+
+
+OUTPUT:
+
+[1, 4, 9, 16, 25, 36, 49, 64, 81]
+```
+
+now we are trying to with lambda
+```
+
+l=[1,2,3,4,5,6,7,8,9]
+m=list(map(lambda n:n*n,l))
+print(m)
+
+OUTPUT:
+[1, 4, 9, 16, 25, 36, 49, 64, 81]
+```
+
+# Increment every employee salary by 10000
+```
+
+class Employee:
+    def __init__(self, name, sal, age, has_gf):
+        self.name = name
+        self.sal = sal
+        self.age = age
+        self.has_gf = has_gf
+
+    def display(self):
+        print(self.name)
+
+e1 = Employee('Mahesh', 15000, 26, True)
+e2 = Employee('ab', 80000, 30, True)
+e3 = Employee('rakesh', 22000, 24, True)
+e4 = Employee('sravya', 25000, 26, False)
+e5 = Employee('suresh', 15000, 25, True)
+e6 = Employee('harsha', 25000, 30, True)
+
+employees = [e1, e2, e3, e4, e5, e6]
+
+
+output = map(lambda e: Employee(e.name, e.sal + 10000, e.age, e.has_gf), employees)
+
+for e in output:
+    print(e.name, '....', e.sal)
+
+output:
+Mahesh .... 25000
+ab .... 90000
+rakesh .... 32000
+sravya .... 35000
+suresh .... 25000
+harsha .... 35000
+```
+
+
+###  Example usage: Generate a power bill for 200 kWh of usage
+generate_power_bill(200)
+
+```
+def calculate_usage_charge(usage):
+    # Assume a rate of $0.10 per kilowatt-hour
+    rate_per_unit = 3.50
+    return usage * rate_per_unit
+
+def calculate_tax(subtotal, tax_rate):
+    return subtotal * tax_rate
+
+def generate_power_bill(usage):
+    # Constants
+    tax_rate = 00.9
+
+    # Calculate usage charge
+    usage_charge = calculate_usage_charge(usage)
+
+    # Calculate subtotal before tax
+    subtotal = usage_charge
+
+    # Calculate tax
+    tax = calculate_tax(subtotal, tax_rate)
+
+    # Calculate total bill
+    total_bill = subtotal + tax
+
+    # Print the bill details
+    print("Power Bill Statement")
+    print("--------------------")
+    print(f"Usage Charge: ${usage_charge:.2f}")
+    print(f"Tax: ${tax:.2f}")
+    print("--------------------")
+    print(f"Total Bill: ${total_bill:.2f}")
+
+output:
+Power Bill Statement
+--------------------
+Usage Charge: $700.00
+Tax: $630.00
+--------------------
+Total Bill: $1330.00
+```
+##  simple calculator implemented using functions in Python:
+```def add(x, y, z, a, b, c):
+    """Addition"""
+    return x + y + z + a + b + c
+
+def subtract(x, y, z, a, b, c):
+    """Subtraction"""
+    return x - y - z - a - b - c
+def multiply(x, y, z, a, b, c):
+    """Multiplication"""
+    return x * y * z * a * b * c
+
+def divide(x, y):
+    """Division"""
+    if y != 0:
+        return x / y
+    else:
+        return "Cannot divide by zero"
+
+def calculator():
+    """Simple calculator program"""
+    print("Welcome to the Calculator!")
+    while True:
+        print("\nSelect operation:")
+        print("1. Add")
+        print("2. Subtract")
+        print("3. Multiply")
+        print("4. Divide")
+        print("5. Exit")
+
+        choice = input("Enter choice (1/2/3/4/5): ")
+
+        if choice == '5':
+            print("Exiting the calculator. Goodbye!")
+            break
+
+        if choice in ('1', '2', '3', '4'):
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+            num3 = float(input("Enter third number"))
+            num4 = float(input("Enter fourth number: "))
+            num5 = float(input("Enter fifth number: "))
+            num6 = float(input("Enter sixth number: "))
+
+            if choice == '1':
+                print("Result:", add(num1, num2, num3, num4, num5, num6))
+            elif choice == '2':
+                print("Result:", subtract(num1, num2, num3, num4, num5, num6))
+            elif choice == '3':
+                print("Result:", multiply(num1, num2, num3, num4, num5, num6))
+            elif choice == '4':
+                print("Result:", divide(num1, num2))
+            else:
+                print("Invalid input. Please enter a valid choice.")
+        else:
+            print("Invalid input. Please enter a valid choice.")
+
+# Run the calculator
+calculator()
+
+output:
+C:\Users\mahes\Documents\python.exe C:\Users\mahes\OneDrive\Desktop\test.py 
+Welcome to the Calculator!
+
+Select operation:
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+5. Exit
+Enter choice (1/2/3/4/5): 3
+Enter first number: 2
+Enter second number: 2
+Enter third number2
+Enter fourth number: 2
+Enter fifth number: 2
+Enter sixth number: 2
+Result: 64.0
+
+Select operation:
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+5. Exit
+Enter choice (1/2/3/4/5): 1
+Enter first number: 2
+Enter second number: 2
+Enter third number2
+Enter fourth number: 2
+Enter fifth number: 2
+Enter sixth number: 2
+Result: 12.0
+
+Select operation:
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+5. Exit
+Enter choice (1/2/3/4/5): 
+
+```
+#### write program In a super market discounts by prices order wise 
+
+Input:--
+
+
+A customer purchase above 200 rupees worth groceries they got 10% discount
+
+
+A customer purchase below 200 rupees worth groceries they got 0% discount
+
+
+A customer purchase above 500 rupees worth groceries they got 15% discount
+
+```
+mrp = float(input("Enter the original price: "))
+
+def disc():
+    if mrp >= 200:
+        return mrp * 10 / 100
+    elif mrp > 500:
+        return mrp * 15 / 100
+    else:
+        return 0
+
+def no_disc():
+    if mrp < 200:
+        return mrp
+    else:
+        return None
+
+discount = disc()
+print("Congratulations you got a discount: ", discount)
+
+no_discount_result = no_disc()
+if no_discount_result is not None:
+    print("You missed the discount. Please purchase 200 or above: ", no_discount_result)
+
+final_price = mrp - discount
+print('Final price:', final_price)
+
+
+output:
+Enter the original price: 100
+Congratulations you got a discount:  0
+You missed the discount. Please purchase 200 or above:  100.0
+Final price: 100.0
+```
+
+#### Genearate the Hyd Yashodha hospital data from their patients bill with their patient ID
+
+```
+class Yashoda_Hospital_MedicalDatabase:
+    def __init__(self):
+        self.patients = {}
+
+    def add_patient(self, patient_id, name, age, diagnosis, treatment_cost):
+        self.patients[patient_id] = {
+            'name': name,
+            'age': age,
+            'diagnosis': diagnosis,
+            'treatment_cost': treatment_cost
+        }
+
+    def generate_bill(self, patient_id):
+        if patient_id in self.patients:
+            patient_info = self.patients[patient_id]
+            return f"Patient: {patient_info['name']}\nAge: {patient_info['age']} years\nDiagnosis: {patient_info['diagnosis']}\nTreatment Cost: Rs{patient_info['treatment_cost']:.2f}"
+        else:
+            return "Patient not found."
+
+def main():
+    medical_db = Yashoda_Hospital_MedicalDatabase()
+
+    # Adding patients to the database
+    medical_db.add_patient(1, "mahesh", 26, "Common Cold", 150.00)
+    medical_db.add_patient(2, "Hema latha", 27, "Fractured Arm", 500.00)
+    medical_db.add_patient(3, "Runa acharya", 36, "High Blood Pressure", 300.00)
+
+    # Generating bills
+    patient_id = int(input("Enter patient ID for bill generation: "))
+    bill = medical_db.generate_bill(patient_id)
+
+    if bill != "Patient not found.":
+        print("\nMedical Bill:")
+        print(bill)
+    else:
+        print("Error:", bill)
+
+if __name__ == "__main__":
+    main()
+
+output:
+Enter patient ID for bill generation: 1
+
+Medical Bill:
+Patient: mahesh
+Age: 26 years
+Diagnosis: Common Cold
+Treatment Cost: Rs150.00
+
+output:
+Enter patient ID for bill generation: 2
+
+Medical Bill:
+Patient: Hema latha
+Age: 27 years
+Diagnosis: Fractured Arm
+Treatment Cost: Rs500.00
+
+output:
+Enter patient ID for bill generation: 3
+
+Medical Bill:
+Patient: Runa acharya
+Age: 36 years
+Diagnosis: High Blood Pressure
+Treatment Cost: Rs300.00
+
+```
+### In Telanagana the govt announcement in free electrcity bill only white ration card(wrc) with limit of 200 units ,they were consume more than 200 units then charger per unit is 7.50 rupees and other pink ration card holder's were paid like prevoius type of cost is below 100 units per unit 3.50 and below 200 units per unit 5.00 rupees and above 200 units as per unit 7.50 rupees..
+
+```
+
+def calculate_cost(id, units):
+    if 'Prc'in id or 'prc' in id:
+        if units <= 100:
+            cost = units * 3.50
+
+        elif units <= 200:
+            cost = units * 5.00
+        else:
+            units >=  200
+            cost = units * 5.00
+
+
+    elif 'Wrc'  in id or 'wrc' in id:
+            if units <= 200:
+                cost = 0
+            else:
+                excess_units = units - 200
+                cost = 100 * 3.50 + 100 * 5.00 + excess_units * 7.50
+    else:
+        cost = 0
+
+    return cost
+
+
+id_input = input("Enter ID: ")
+units_input = int(input("Enter units consumed: "))
+
+total_cost = calculate_cost(id_input, units_input)
+print(f"Total cost: {total_cost} rupees")
+
+output:
+Enter ID: wrc65652656546
+Enter units consumed: 199
+Total cost: 0 rupees
+
+output:
+Enter ID: wrc354346
+Enter units consumed: 201
+Total cost: 857.5 rupees
+
+output:
+Enter ID: prc8566582
+Enter units consumed: 100
+Total cost: 350.0 rupees
+
+
+
+```
+### same above bill in just adding date and time and due date and some instructions
+```
+import datetime
+
+def calculate_cost(id, units):
+    if 'Prc' in id or 'prc' in id:
+        if units <= 100:
+            cost = units * 3.50
+        elif units <= 200:
+            cost = units * 5.00
+        else:
+            cost = units * 5.00  # Corrected this line
+
+    elif 'Wrc' in id or 'wrc' in id:  # Corrected this line
+        if units <= 200:
+            cost = 0
+        else:
+            excess_units = units - 200  # Corrected this line
+            cost = 100 * 3.50 + 100 * 5.00 + excess_units * 7.50
+
+    else:
+        cost = 0
+
+    return cost
+
+def generate_bill(id, name,units, total_cost):
+    current_datetime = datetime.datetime.now()
+    due_date = current_datetime + datetime.timedelta(days=30)
+
+    print("\n------ Bill Summary ------")
+    print(f"ID: {id}")
+    print(f"Name: {name}")
+    print(f"Units Consumed: {units}")
+    print(f"Total Cost: {total_cost} rupees")
+    print(f"Bill Generation Date: {current_datetime.strftime('%d-%m-%Y %H:%M:%S')}")
+    print(f"Due Date: {due_date.strftime('%d-%m-%Y')}")
+    print("--------------------------")
+    print("PLEASE SAVE THE POWER FOR FUTURE GENERATION")
+    print("------.PLEASE PAY IN TIME AVOID FINES.------")
+    print("                                   ELECTRICITY OFFICER")
+    print("                                         mahesh battu ")
+
+id_input = input("Enter ID: ")
+units_input = int(input("Enter units consumed: "))
+name = (input("Enter The consumer name :"))
+
+total_cost = calculate_cost(id_input, units_input)
+generate_bill(id_input, name,  units_input, total_cost)
+
+
+output:
+Enter ID: wrc5346
+Enter units consumed: 150
+Enter The consumer name :BATTU HEMA LATHA
+
+------ Bill Summary ------
+ID: wrc5346
+Name: BATTU HEMA LATHA
+Units Consumed: 150
+Total Cost: 0 rupees
+Bill Generation Date: 24-12-2023 15:11:33
+Due Date: 23-01-2024
+--------------------------
+PLEASE SAVE THE POWER FOR FUTURE GENERATION
+------.PLEASE PAY IN TIME AVOID FINES.------
+                                   ELECTRICITY OFFICER
+                                         mahesh battu
+
+```
+### Bank ATM Management system without functions only with  oparators,conditional statements,some built in functions
+```
+
+from datetime import datetime
+current_datetime = datetime.now()
+format_datetime = current_datetime.strftime("%Y-%m-%d %H:%M:%S")
+
+username = 'Hema latha'
+password = 'Himahi123'
+
+c_name = input("Enter your user name: ")
+c_pass = input('Enter your password: ')
+
+if c_name == username and c_pass == password:
+    print('''
+        1.deposit
+        2.withdraw
+        3.Balance enquiry
+        4.Exit''')
+    amount = 50000
+    option = int(input("Please, Select your option:--"))
+    if option == 1:
+        dep = int(input("Enter the amount: "))
+        amount += dep 
+        print("Your total amount:",amount)
+        print("Date and time:",format_datetime)
+        print("*****THANKS FOR VISITING*****")
+
+    elif option == 2:
+            withdraw = int(input("Enter your withdrawn amount:"))
+            amount -= withdraw
+            print("Your Remaining amount:",amount)
+            print("Date and time:",format_datetime)
+            print("*****THANKS FOR VISITING*****")
+
+    elif option == 3:
+        print('your current amount:',amount)
+        print("Date and time:",format_datetime)
+        print("*****THANKS FOR VISITING*****")
+
+
+    elif option == 4:
+        exit()
+    else:
+        print("---Please Enter correct details---")
+        print("Date and time:",format_datetime)
+        print("*****THANKS FOR VISITING*****")
+
+output:
+Enter your user name: Hema latha
+Enter your password: Himahi123
+
+        1.deposit
+        2.withdraw
+        3.Balance enquiry
+        4.Exit
+Please, Select your option:--3
+your current amount: 50000
+Date and time: 2023-12-26 13:12:34
+*****THANKS FOR VISITING*****
+
+Enter your user name: Hema latha
+Enter your password: Himahi123
+
+        1.deposit
+        2.withdraw
+        3.Balance enquiry
+        4.Exit
+Please, Select your option:--2
+Enter your withdrawn amount:50000
+Your Remaining amount: 0
+Date and time: 2023-12-26 13:17:20
+*****THANKS FOR VISITING*****
+
+```
+#### ATM with functions  and coditionals    
+```
+from datetime import datetime
+
+def get_current_datetime():
+    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+def login():
+    username = 'Kavya'
+    password = 'kavya123'
+   
+
+    c_name = input("Enter your name: ")
+    c_pass = input("Enter your password")
+
+    return c_name == username and c_pass == password
+    
+def deposit(amount):
+    dep = int(input("Enter Your Amount: "))
+    amount += dep
+    return amount
+def withdraw(amount):
+    wid = int(input("Enter Your Amount: "))
+    amount -= wid
+    return amount
+def B_enq(amount):
+    print("Your Current Amount:",amount)
+    
+def main():
+    current_datetime = get_current_datetime()
+
+    if not login():
+        print("----Invalid credintials----")
+        return
+    
+    print('''
+          1.Deposit
+          2.Withdraw
+          3.Balance eaquiery
+          4.exit''')
+    
+    amount = 50000
+
+    option = int(input("Select your option:> "))
+
+    if option == 1:
+        amount = deposit(amount)
+    elif option == 2:
+        amount = withdraw(amount)
+    elif option ==3:
+        amount  = B_enq(amount)
+    elif option == 4:
+        exit()
+    else:
+        print("---Please Enter correct Details---")
+    
+    print("Date and Time:",current_datetime)
+    print("*******THANKS FOR VISITING*******")
+
+if __name__=="__main__":
+
+    main()
+ ````
+### A supermarket billing system a small data ---
+
+```
+from datetime import datetime
+
+name = input("Enter Your Name: ")
+lists='''
+Rice        Rs20/kg
+sugar       Rs40/kg
+salt        Rs 20/kg
+oil         Rs 140/liter
+paneer      Rs 200/kg
+maggi       Rs50/kg
+Boost       Rs 90/each
+colagate    Rs 85/each
+'''
+price=0
+pricelist=[]
+totalprice=0
+Finalprice=0
+ilist=[]
+qlist=[]
+plist=[]
+
+# Rates for items dict
+
+items={'rice':20,'sugar':40,'salt':20,'oil':140,'paneer':200,'maggi':50,'boost':90,'colgate':85}
+
+option= int(input("For list of items press 1:"))
+if option==1:
+    print(lists)
+
+for i in range(len(items)):
+    inp1=int(input("if you want to buy press 1 or 2 for exit:"))
+    if inp1==2:
+        break
+    if inp1==1:
+        item=input('Enter your items:')
+        quantity=int(input("Enter quantity:"))
+        if item in items.keys():
+            price=quantity*(items[item])
+            pricelist.append((item,quantity,items,price))
+            totalprice+=price
+            ilist.append(item)
+            qlist.append(quantity)
+            plist.append(price)
+            Gst=(totalprice*9)/100
+            finalamount=Gst+totalprice
+        else:
+            print("Sorry Your Entered Item is not avialable")
+    else:
+        print("Your Entered wrong number")
+
+    inp=input("can i bill the itemss yes or no:")
+    if inp=='yes':
+        pass
+        if finalamount !=0:
+            print(25*"=","MARUTHI SUPER MARKET",25*"=")
+            print(25*"=","RAJANNA SIRCILLA")
+            print("name:",name,30*" ","date:",datetime.now())
+            print(75*"-")
+            print("sno",6*" ","items",5*" ","Qty",5*" ","price")
+            for i in range(len(pricelist)):
+                print(i,8*" ",ilist[i],8*" ",qlist[i],8*" ",plist[i])
+            print(75*"-")
+            print(50*" ","total amount:","Rs",totalprice)
+            print("Gst amount",50*" ","Rs",finalamount)
+            print(75*"-")
+            print(50*" ","THANKS FOR VISITING")
+            print(75*"~")
+
+output:
+Enter Your Name: mahesh
+For list of items press 1:1
+
+Rice        Rs20/kg
+sugar       Rs40/kg
+salt        Rs 20/kg
+oil         Rs 140/liter
+paneer      Rs 200/kg
+maggi       Rs50/kg
+Boost       Rs 90/each
+colagate    Rs 85/each
+
+if you want to buy press 1 or 2 for exit:1
+Enter your items:oil
+Enter quantity:4
+can i bill the itemss yes or no:yes
+========================= MARUTHI SUPER MARKET =========================
+========================= RAJANNA SIRCILLA==============================
+name: mahesh                                date: 2023-12-26 16:10:58.319300
+---------------------------------------------------------------------------
+sno       items          Qty       price
+0          oil          4       560
+---------------------------------------------------------------------------
+                                                   total amount: Rs 560
+Gst amount                                                    Rs 610.4
+---------------------------------------------------------------------------
+                                                   THANKS FOR VISITING
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+if you want to buy press 1 or 2 for exit:1
+Enter your items:salt
+Enter quantity:2
+can i bill the itemss yes or no:yes
+========================= MARUTHI SUPER MARKET =========================
+========================= RAJANNA SIRCILLA==============================
+name: mahesh                                date: 2023-12-26 16:12:22.523618
+---------------------------------------------------------------------------
+sno      items          Qty       price
+0          oil          4       560
+1          salt          2       40
+---------------------------------------------------------------------------
+                                                   total amount: Rs 600
+Gst amount                                                    Rs 654.0
+---------------------------------------------------------------------------
+                                                   THANKS FOR VISITING
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+if you want to buy press 1 or 2 for exit:1
+Enter your items:paneer
+Enter quantity:3
+can i bill the itemss yes or no:yes
+========================= MARUTHI SUPER MARKET =========================
+========================= RAJANNA SIRCILLA==============================
+name: mahesh                                date: 2023-12-26 16:13:03.652959
+---------------------------------------------------------------------------
+sno        items          Qty       price
+0          oil          4       560
+1          salt          2       40
+2          paneer          3       600
+---------------------------------------------------------------------------
+                                                   total amount: Rs 1200
+Gst amount                                                    Rs 1308.0
+---------------------------------------------------------------------------
+                                                   THANKS FOR VISITING
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+if you want to buy press 1 or 2 for exit:1
+Enter your items:maggi
+Enter quantity:3
+can i bill the itemss yes or no:yes
+========================= MARUTHI SUPER MARKET =========================
+========================= RAJANNA SIRCILLA=============================
+name: mahesh                                date: 2023-12-26 16:13:31.141698
+---------------------------------------------------------------------------
+sno      items          Qty       price
+0          oil          4       560
+1          salt          2       40
+2          paneer          3       600
+3          maggi          3       150
+---------------------------------------------------------------------------
+                                                   total amount: Rs 1350
+Gst amount                                                    Rs 1471.5
+---------------------------------------------------------------------------
+                                                   THANKS FOR VISITING
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+if you want to buy press 1 or 2 for exit:1
+Enter your items:colagate
+Enter quantity:5
+Sorry Your Entered Item is not avialable
+can i bill the itemss yes or no:yes
+========================= MARUTHI SUPER MARKET =========================
+========================= RAJANNA SIRCILLA==============================
+name: mahesh                                date: 2023-12-26 16:15:04.945504
+---------------------------------------------------------------------------
+sno         items          Qty       price
+0          oil              4             560
+1          salt              2             40
+2          paneer            3           600
+3          maggi             3             150
+---------------------------------------------------------------------------
+                                                   total amount: Rs 1350
+Gst amount                                                    Rs 1471.5
+---------------------------------------------------------------------------
+                                                   THANKS FOR VISITING
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+if you want to buy press 1 or 2 for exit:1
+Enter your items:colagate
+Enter quantity:2
+Sorry Your Entered Item is not avialable
+can i bill the itemss yes or no:
+```
+### write a program newly announced the telangana police dept in vehciles E-challans discounts include with some suggestions while generating e-challan bill.
+
+```
+from datetime import datetime
+
+def e_challan(vehcile):
+    if 'ts' in vehcile or 'Ts' in vehcile or 'TS' in vehcile:
+        print("Your Eligible for E-challan discount")
+        print('''
+              1.2 wheeler=80%
+              2.3 wheeler=75%
+              3.4 wheeler=60%
+              4.6 wheeler=50%''')
+        name = str(input("Enter your name :"))
+        option = int(input("Select your option:"))
+        
+        if option == 1:
+            amount=int(input("Enter Your Challan amount: "))
+            disc=amount*80/100
+            total = amount-disc
+            print("you will be paying amount is ",total)
+
+        if option == 2:
+            amount=int(input("Enter Your Challan amount: "))
+            disc=amount*75/100
+            total = amount-disc
+            print("you will be paying amount is ",total)
+
+        
+        if option == 3:
+            amount=int(input("Enter Your Challan amount: "))
+            disc=amount*60/100
+            total = amount-disc
+            print("you will be paying amount is ",total)
+
+        
+        if option == 4:
+            amount=int(input("Enter Your Challan amount: "))
+            disc=amount*50/100
+            total = amount-disc
+            print("you will be paying amount is ",total)
+
+
+        if amount !=0:
+            
+            print("                                                ")
+            print(15*"*","WEL COME TS POLICE DEPT",15*"*")
+            print("                                                ")
+            print(10*" ","Ownwe  Name: ",   name,5*" ")
+            print(10*" ","vehcile number: ",vehcile,5*" ")
+            print("                                                ")
+            print(10*" ","Your Penalties: ",amount,10*" ")
+            print("                                                ")
+            print(10*" ","Discounted amount: ",disc,10*" ")
+            print("                                                ")
+            print(10*" ","FINAL AMOUNT: ",     total,1*" ")
+            print(10*" ","Status :  paid",1*" ")
+            print("                                                ")
+            print(10*" ","date:",datetime.now(),1*" ")
+            print("----------------------------------------------------------")
+            print("                                                ")
+            print(8*" - ","NOTE:",8*" - ")
+            print(15*" ","PLEASE DON'T DO AGIANST TO TRAFFIC RULES",15*" ")
+            print(15*" ","PLEASE WEAR HELMET",25*" ")
+            print(15*" ","PLEASE GIVE WAY TO AMBULANACE",25*" ")
+            print(15*" ","DON'T BLOCK FREE LEFT ",25*" ")
+            print(15*" ","DON'T DRUNK AND DRIVE ",25*" ")
+            print(15*" ","DON'T GO WRONG ROUTE IT'S MAKE HARSH YOUR FAMILY",25*" ")
+            print(22*"-","TS GOVT",22*"-")
+        else:
+            print("Please, Enter your option for your suitable vehcile only")
+    
+    else:
+        print("This Discount valid for Telangana vehciles only")
+
+
+vehcile=input(str("Enter YOur vehcile Number :"))
+e_challan(vehcile)
+
+OUTPUT:
+Enter YOur vehcile Number :TS23C1478
+Your Eligible for E-challan discount
+
+              1.2 wheeler=80%
+              2.3 wheeler=75%
+              3.4 wheeler=60%
+              4.6 wheeler=50%
+Enter your name :BATTU MAHESH  
+Select your option:1
+Enter Your Challan amount: 1440
+you will be paying amount is  288.0
+
+*************** WEL COME TS POLICE DEPT ***************
+
+           Ownwe  Name:  BATTU MAHESH
+           vehcile number:  TS23C1478
+
+           Your Penalties:  1440
+
+           Discounted amount:  1152.0
+
+           FINAL AMOUNT:  288.0
+           Status :  paid
+
+           date: 2023-12-27 15:20:29.513430
+----------------------------------------------------------
+
+ -  -  -  -  -  -  -  -  NOTE:  -  -  -  -  -  -  -  -
+                PLEASE DON'T DO AGIANST TO TRAFFIC RULES
+                PLEASE WEAR HELMET
+                PLEASE GIVE WAY TO AMBULANACE
+                DON'T BLOCK FREE LEFT       
+                DON'T DRUNK AND DRIVE       
+                DON'T GO WRONG ROUTE IT'S MAKE HARSH YOUR FAMILY                        
+
+---------------------- TS GOVT ----------------------
+```
+> https://medium.datadriveninvestor.com/140-python-projects-with-source-code-fa12c9e2aeac
+> python projects
+#### Task manager working code
+
+```
+# task_manager.py
+
+tasks = []
+
+def add_task(task):
+    tasks.append({"task": task, "completed": False})
+    print("Task added successfully!")
+
+def view_tasks():
+    print("\n===== Task List =====")
+    for index, task_info in enumerate(tasks, 1):
+        status = "Completed" if task_info["completed"] else "Not Completed"
+        print(f"{index}. {task_info['task']} - {status}")
+    print("=====================")
+
+def mark_completed(index):
+    if 1 <= index <= len(tasks):
+        tasks[index - 1]["completed"] = True
+        print("Task marked as completed!")
+    else:
+        print("Invalid task index!")
+
+def delete_task(index):
+    if 1 <= index <= len(tasks):
+        deleted_task = tasks.pop(index - 1)
+        print(f"Task '{deleted_task['task']}' deleted successfully!")
+    else:
+        print("Invalid task index!")
+
+def main():
+    while True:
+        print("\n===== Task Manager =====")
+        print("1. Add Task")
+        print("2. View Tasks")
+        print("3. Mark Task as Completed")
+        print("4. Delete Task")
+        print("5. Exit")
+
+        choice = int(input("Enter your choice: "))
+
+        if choice == 1:
+            task = input("Enter the task: ")
+            add_task(task)
+        elif choice == 2:
+            view_tasks()
+        elif choice == 3:
+            view_tasks()
+            index = int(input("Enter the task index to mark as completed: "))
+            mark_completed(index)
+        elif choice == 4:
+            view_tasks()
+            index = int(input("Enter the task index to delete: "))
+            delete_task(index)
+        elif choice == 5:
+            print("Exiting Task Manager. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()
+
+
+output:
+
+===== Task Manager =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Completed
+4. Delete Task
+5. Exit
+Enter your choice: 1
+Enter the task: I will achive the 2 million package
+Task added successfully!
+
+===== Task Manager =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Completed
+4. Delete Task
+5. Exit
+Enter your choice: 1
+Enter the task: I will be daily practice 2 programs
+Task added successfully!
+
+===== Task Manager =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Completed
+4. Delete Task
+5. Exit
+Enter your choice: 1
+Enter the task: I will Explore day by day to gain the success...
+Task added successfully!
+
+===== Task Manager =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Completed
+4. Delete Task
+5. Exit
+Enter your choice: 2
+
+===== Task List =====
+1. I will achive the 2 million package - Not Completed
+2. I will be daily practice 2 programs - Not Completed
+3. I will Explore day by day to gain the success... - Not Completed
+=====================
+
+===== Task Manager =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Completed
+4. Delete Task
+5. Exit
+Enter your choice: 3
+
+===== Task List =====
+1. I will achive the 2 million package - Not Completed
+2. I will be daily practice 2 programs - Not Completed
+3. I will Explore day by day to gain the success... - Not Completed
+=====================
+Enter the task index to mark as completed: 1
+Task marked as completed!
+
+===== Task Manager =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Completed
+4. Delete Task
+5. Exit
+Enter your choice: 3
+
+===== Task List =====
+1. I will achive the 2 million package - Completed
+2. I will be daily practice 2 programs - Not Completed
+3. I will Explore day by day to gain the success... - Not Completed
+=====================
+Enter the task index to mark as completed: 2
+Task marked as completed!
+
+===== Task Manager =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Completed
+4. Delete Task
+5. Exit
+Enter your choice: 3
+
+===== Task List =====
+1. I will achive the 2 million package - Completed
+2. I will be daily practice 2 programs - Completed
+3. I will Explore day by day to gain the success... - Not Completed
+=====================
+Enter the task index to mark as completed: 3
+Task marked as completed!
+
+===== Task Manager =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Completed
+4. Delete Task
+5. Exit
+Enter your choice: 3
+
+===== Task List =====
+1. I will achive the 2 million package - Completed
+2. I will be daily practice 2 programs - Completed
+3. I will Explore day by day to gain the success... - Completed
+=====================
+Enter the task index to mark as completed: 2
+Task marked as completed!
+
+===== Task Manager =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Completed
+4. Delete Task
+5. Exit
+Enter your choice: 2
+
+===== Task List =====
+1. I will achive the 2 million package - Completed
+2. I will be daily practice 2 programs - Completed
+3. I will Explore day by day to gain the success... - Completed
+=====================
+
+===== Task Manager =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Completed
+4. Delete Task
+5. Exit
+Enter your choice: 4
+
+===== Task List =====
+1. I will achive the 2 million package - Completed
+2. I will be daily practice 2 programs - Completed
+3. I will Explore day by day to gain the success... - Completed
+=====================
+Enter the task index to delete: 3
+Task 'I will Explore day by day to gain the success...' deleted successfully!
+
+===== Task Manager =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Completed
+4. Delete Task
+5. Exit
+Enter your choice: 2
+
+===== Task List =====
+1. I will achive the 2 million package - Completed
+2. I will be daily practice 2 programs - Completed
+=====================
+
+===== Task Manager =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Completed
+4. Delete Task
+5. Exit
+Enter your choice: 5
+Exiting Task Manager. Goodbye!
+
+```

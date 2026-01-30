@@ -1,0 +1,27 @@
+			======================================================
+						Regular Expressions 
+			======================================================
+Index
+---------------
+=>Purpose of Regular Expressions 
+=>Defnition of Regular Expressions 
+=>Applications of Regular Expressions 
+=>Module Name Required for Dealing with Regular Expressions--re
+=>Functions of re module
+		a) findall()
+		b) finditer()
+		c) search()
+		d) start()
+		e) end()
+		f) group()
+=>Programming Examples
+-----------------------------------------------------------------------------------
+=>Programmer-Defined Character Classes
+=>Programming Examples
+=>Pre-Defined Character Classes
+=>Programming Examples
+=>Quantifiers
+=>Programming Examples
+-----------------------------------------------------------------------------------
+Combined Programming Examples on Programmer, Pre-Defined and Quantifiers
+----------------------------------------------------------------------------------------------------------------------

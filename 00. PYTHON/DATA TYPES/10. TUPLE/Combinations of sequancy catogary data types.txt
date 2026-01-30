@@ -1,0 +1,9 @@
+					===========================================
+						COMBINETION OF SET AND LIST AND TUPLE
+					===========================================
+							set in set --> not possible
+							list in set --> not possible
+							tuple in set --> possible
+							set in list --> possible
+							set in tuple --> possible
+					===========================================

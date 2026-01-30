@@ -1,0 +1,10 @@
+#OOPsEx.py
+class Test:
+	count=0
+	def __init__(self):
+		Test.count = Test.count+1
+	def noofobj():
+		print("Obj in Class")
+t = Test()
+t1 = Test()
+Test.noofobj()

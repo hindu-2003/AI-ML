@@ -1,0 +1,64 @@
+
+In the Windows Command Prompt, there are several commands related to changing the directory and modifying the path environment variable. Here are some of the key commands:
+
+Change Directory (cd)
+Change to a specific directory:
+
+
+
+cd [path_to_directory]
+Example:
+
+
+
+cd C:\Users\Username\Documents
+Change to the parent directory:
+
+
+
+cd ..
+Change to the root directory of the current drive:
+
+
+
+cd \
+Change to a directory on a different drive:
+
+
+cd /d [drive_letter]:\[path_to_directory]
+Example:
+
+
+cd /d D:\Projects
+Display the current directory:
+
+
+cd
+Modify Path Environment Variable
+Display the current path:
+
+
+echo %PATH%
+Temporarily add a directory to the path (for the current session only):
+
+
+set PATH=%PATH%;[path_to_directory]
+Example:
+
+set PATH=%PATH%;C:\Program Files\MyApp\bin
+Permanently add a directory to the path (requires administrative privileges):
+
+
+setx PATH "%PATH%;[path_to_directory]"
+Example:
+
+
+setx PATH "%PATH%;C:\Program Files\MyApp\bin"
+Note: You need to restart the Command Prompt or log off and log back in to see the changes take effect.
+
+Additional Notes
+Paths with spaces need to be enclosed in quotes. Example:
+
+
+cd "C:\Program Files\MyApp"
+Use setx carefully because it changes the system or user environment variables permanently. Always make sure to include the existing %PATH% in the new path to avoid overwriting it completely.

@@ -1,0 +1,70 @@
+				================================================
+							4. complex
+				================================================
+=>'complex' is one of the Pre-Defined Class and Treated as Fundamental Data Type.
+=>The purpose of complex data type is that "To store Complex Data"
+=>The General Notation Complex data is given bellow.
+			
+						a+bj OR a-bj
+		=>Here 'a' is called Real part
+		=>here 'b' is called Imginary part
+		=>here letter 'j' represents sqrt(-1)  OR  sqr(j)=-1
+=>Internally Real  and Imaginary Parts of complex object are treated as float type.
+=>To get real and Imaginary Parts of Complex object, we use 2 Pre-Defined Attributes. They are
+				a) real
+				b) imag
+		=>Syntax:  complexobj.real----->gives Real part of complex Object
+				   complexobj.imag---->gives Imagiary part of Complex object
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Examples
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> a=2+3j
+>>> print(a,type(a))---------------------------(2+3j) <class 'complex'>
+>>> b=-2-3j
+>>> print(b,type(b))---------------------------(-2-3j) <class 'complex'>
+>>>
+>>> a=2.3+4.6j
+>>> print(a,type(a))--------------------------(2.3+4.6j) <class 'complex'>
+>>> b=-4.5-6.7j
+>>> print(b,type(b))--------------------------(-4.5-6.7j) <class 'complex'>
+>>>
+>>>
+>>> a=10+2.3j
+>>> print(a,type(a))--------------------------(10+2.3j) <class 'complex'>
+>>> b=-12.5-4j
+>>> print(b,type(b))-------------------------(-12.5-4j) <class 'complex'>
+-----------
+>>> a=10+2i----------------------------------SyntaxError: invalid decimal literal
+------------------
+>>> a=2j
+>>> print(a,type(a))--------------------2j <class 'complex'>
+>>> b=2.3j
+>>> print(b,type(b))-------------------2.3j <class 'complex'>
+>>> a=-2.3j
+>>> print(a,type(a))------------------ (-0-2.3j) <class 'complex'>--Most Imp
+>>> b=3j
+>>> print(b,type(b))-------------------3j <class 'complex'>
+--------------------------------
+>>> a=2+3j
+>>> print(a.real)-------------------2.0
+>>> print(a.imag)-----------------3.0
+>>> a=2.3+4.5j
+>>> print(a.real)------------------2.3
+>>> print(a.imag)----------------4.5
+>>> a=2-3.4j
+>>> print(a.real)------------------2.0
+>>> print(a.imag)----------------  -3.4
+>>> a=3.4j
+>>> print(a.real)-----------------0.0
+>>> print(a.imag)---------------3.4
+>>> a=-3.5j
+>>> print(a.real)-----------------   -0.0
+>>> print(a.imag)---------------   -3.5
+---------------------------------------------------
+>>> a=2+3j
+>>> print(a.real)-----------2.0
+>>> print(a.imaginary)------------------AttributeError: 'complex' object has no attribute 'imaginary'
+>>> print(a.imag)--------3.0
+======================================x===============================================
+
+

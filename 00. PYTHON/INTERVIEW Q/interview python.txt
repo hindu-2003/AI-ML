@@ -1,0 +1,60 @@
+						====================================================
+										Python Interview Questions
+						====================================================
+	
+1. What is Python? List some popular applications of Python in the world of technology.
+2. What are the benefits of using Python language as a tool in the present scenario?
+3. Is Python a compiled language or an interpreted language?
+4. What does the ‘#’ symbol do in Python?
+5. What is the difference between a Mutable datatype and an Immutable data type?
+6. How are arguments passed by value or by reference in Python?
+7. What is the difference between a Set and Dictionary?
+8. What is List Comprehension? Give an Example.
+9. What is a lambda function?
+10. What is a pass in Python?
+11. What is the difference between / and // in Python?
+12. How is Exceptional handling done in Python?
+13. What is swapcase function in Python?
+14. Difference between for loop and while loop in Python
+15. Can we Pass a function as an argument in Python?
+16. What are *args and *kwargs?
+17. Is Indentation Required in Python?
+18. What is Scope in Python?
+19. What is docstring in Python?
+20. What is a dynamically typed language?
+21. What is a break, continue, and pass in Python? 
+22. What are Built-in data types in Python?
+23. How do you floor a number in Python?
+Intermediate Python Interview Questions
+24. What is the difference between xrange and range functions?
+25. What is Dictionary Comprehension? Give an Example
+26. Is Tuple Comprehension? If yes, how, and if not why?
+27. Differentiate between List and Tuple?
+28. What is the difference between a shallow copy and a deep copy?
+29. Which sorting technique is used by sort() and sorted() functions of python?
+30. What are Decorators?
+31. How do you debug a Python program?
+32. What are Iterators in Python?
+33. What are Generators in Python?
+34. Does Python supports multiple Inheritance?
+35. What is Polymorphism in Python?
+36. Define encapsulation in Python?
+37. How do you do data abstraction in Python?
+38. How is memory management done in Python?
+39. How to delete a file using Python?
+40. What is slicing in Python?
+41. What is a namespace in Python?
+Advanced Python Interview Questions & Answers 
+42. What is PIP?
+43. What is a zip function?
+44. What are Pickling and Unpickling?
+45. What is monkey patching in Python?
+46. What is __init__() in Python?
+47. Write a code to display the current time?
+48. What are Access Specifiers in Python?
+49. What are unit tests in Python?
+50. Python Global Interpreter Lock (GIL)?
+51. What are Function Annotations in Python?
+52. What are Exception Groups in Python?
+53. What is Python Switch Statement 
+54. What is Walrus Operator?

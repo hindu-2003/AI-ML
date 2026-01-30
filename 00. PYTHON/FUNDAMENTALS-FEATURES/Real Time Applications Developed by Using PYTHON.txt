@@ -1,0 +1,41 @@
+				========================================================
+					Real Time Applications Developed by Using PYTHON
+				========================================================
+=>By Using PYTHON Programming with Other Supporting Technologies, We can develop the Following Real Time 
+   Applications.
+
+			1. Development of WEB Applications ( Web Sites)
+					
+					i) Java Programming Lang------->Tech: Servlets,JDBC,JSP,Hibernate,Spring,Spring Boot,..etc
+						(SUN MS--->Oracle corp)
+					ii) C#.net Programming Lang----->Tech: ASP.net, ASP Micro Services...etc
+						(Micro Soft INC USA)
+					iii) PYTHON Programming Lang--->Tech: Django,Falsk,Pyramid, Bottle
+							(Less Lines of Code and Gives More Meaning bcoz of In-built MODULES)
+
+			2. Development of Artificial Inteligence Applications
+								a) Machine Learning
+								b) Deep Learning
+			3. Development of Gaming Applications
+			4. Development of Image Processing Applications(opencv)
+			5. Development of Audio and Video Based Applications.
+			6. Development of Web Scrapping / Web Harvesting Applications
+			7. Development of Business Applications (amazon,flipcart,meshow...etc)
+			8. Development of Scientific Applications
+			9. Development of Software Development (Project Level--ICICI,SBI,HDFC...etc)
+			10. Development of OS Installers
+			11. Development of Programming Lang Like Spark, Scala
+			12. Development of Desktop GUI Applications.
+			13. Development of Data Analysis and Data Analytics
+			14. Dveleopment of Automation Testing
+			15. Development of Complex Math Operations.
+			16. Development of Data Visualization Applications
+			17. Development of CAD and CAM Applications.
+			19. Development of Computer Vision
+			20. Education Sector.....many more
+
+
+
+
+
+			

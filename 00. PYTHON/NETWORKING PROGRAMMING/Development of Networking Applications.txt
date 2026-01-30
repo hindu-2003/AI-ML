@@ -1,0 +1,28 @@
+				====================================================
+					Development of Networking Applications
+				====================================================
+=>As a Part of Network Programming, we can 2 Types of Programs. They are
+
+			1. Server Side Program
+			2. Client Side Program
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Steps for Developing  Server Side Programs.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Step-1 : import socket module and other modules if required
+Step-2 : Create an Object of Socket (Called Server Socket)
+Step-3 : Every Server Socket Must BINDS with Certain Machine and Port Number + Every Server Socket Must be 
+              configured in such way that to how many Client Sockets  the Server Socket communicates.
+Step-4 : Every Server Socket Must ACCEPT Client Socket
+Step-5 : Every Server Socket Must READ Client Socket Data and PROCESS 
+Step-6 : Every Server Socket Must give RESPONSE to Client Socket
+Step-7 : Repeat Step-4,Step-5,Step-6 Until All Requests Completed from Client Socket
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Steps for Developing  Client  Side Programs.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Step-1 : import socket module and other modules if required
+Step-2 : Create an Object  of Socket  (Called Client Socket)
+Step-3 : Every Client Socket must get CONNECTION from Server Side Program (Server Socket)
+Step-4 : Every Client Socket Must SEND the Request to Server Socket.
+Step-5 : Every Client Socket Must RECEVIVE the Response from Server Socket
+Step-6: Repeat Step-4 and Step-5 Until All Requests Completed from Client Socket
+------------------------------------------------------------------------------------------------------------------------------------------------------

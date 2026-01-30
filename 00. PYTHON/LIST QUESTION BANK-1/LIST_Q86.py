@@ -1,0 +1,16 @@
+# LIST_Q86.py
+# 86. Write a Python program to create a 3X3 grid with numbers.
+#	3X3 grid with numbers:
+op = 	[[1, 2, 3], [1, 2, 3], [1, 2, 3]]
+list = [int(val) for val in input("Enter the  values for creating  grid by numbers with comma's :").split(",")]
+Nest_lst = []
+for i in range(1,len(list)+1):
+	Nest_lst.append(list)
+print("="*50)
+print("{}x{} grid data is ={}".format(len(list),len(list),Nest_lst))
+print("="*50)
+print('\t YOU ENTERING GRID FORMAT ')
+print("="*50)
+for i in Nest_lst:
+	print("\t\t",i)
+print("="*50)

@@ -1,0 +1,20 @@
+zip function
+
+
+
+To purpose of zip function which is two iterable objects like(lists,tuples) are individual object are connect the pair of each iterable object values
+
+
+Ex:
+lst1 = [10,20,30,40]
+lst2 = [10,20,30]
+x = zip(lst1,lst2)
+print(x)
+
+o/p:
+(10,10)
+(20,20)
+(30,30)
+
+
+with in implicity of values only

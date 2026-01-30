@@ -1,0 +1,41 @@
+				=================================================
+							1. Arithmetic Operators
+				=================================================
+=>The purpose of Arithmetic Operators is that "To Perform Arithmetic Operations such as Addition,Substraction, 
+    Multiplication..etc"
+=>If two Or More Values OR Objects OR variables Connected with Arithmetic Operators then It is called Arithmetic 
+    Expression.
+=>In python Programming, we have 7 Types of Arithmetic Operators. They are Given in the following table.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+SLNO		SYMBOL		MEANING		EXAMPLES  a=10   b=3
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+1.			+			Addition			print(a+b)-------13
+
+2.			-			Substraction		print(a-b)--------7
+
+3.			*			Multiplication		print(a*b)--------30
+
+4.			/			Division			print(a/b)--------3.3333333333333335
+						(Float Quotient)
+
+5.			//			Floor Division	print(a//b)-------3
+						(Integer Quotient)
+
+6.			%			Modulo Division	print(a%b)-------1	
+
+7.			**			Exponentiation	print(a**b)-------1000.0
+						
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE-1
+	>>> print(10/3)-----------3.3333333333333335
+	>>> print(10//3)-----------3
+NOTE-2
+	>>> print(10.0/3.0)-----------3.3333333333333335
+	>>> print(10.0//3.0)----------3.0
+NOTE-3
+	>>> print(10.0/3)-------------3.3333333333333335
+	>>> print(10.0//3)------------3.0
+NOTE-4
+	>>> print(10/3.0)-------------3.3333333333333335
+	>>> print(10//3.0)------------3.0
+==========================================================================================

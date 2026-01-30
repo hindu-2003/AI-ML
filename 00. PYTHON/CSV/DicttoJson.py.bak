@@ -1,0 +1,7 @@
+#DicttoJson.py
+import json
+d = {"Sno":10,"Name" : "mahesh","Marks":56}
+with open("ST.json","a")as fp:
+	json.dump(d,fp)
+	print("Dumped complete Verify")
+	

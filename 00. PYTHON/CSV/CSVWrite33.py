@@ -1,0 +1,37 @@
+#CSVWrite33.py
+import csv
+noc = int(input("Enter the columns How many you Want:"))
+if (noc<=0):
+	print("Invalid Input for Columns")
+else:
+	colnames = []
+	for i in range(1,noc+1):
+		val = input("Enter {} Colnames:".format(i))
+		colnames.append(val)
+	else:
+		nor = int(input("Enter How many records You Want :"))
+		if (nor<=0):
+			print("{} Invalid Input".format(nor))
+		else:
+			records = []
+			for i in range(1,nor+1):
+				print("Enter {} Record ".format(i))
+				record = []
+				for name in colnames:
+					val = input("Enter {} details:".format(name))
+					record.append(val)
+				records.append(record)
+while(10):
+	filename = input("Enter the file name with an Extension .csv format only :").lower()
+	if (filename.endswith(".csv")):
+		with open(filename,"a",newline="") as fp:
+			csvw = csv.writer(fp)
+			csvw.writerow(colnames)
+			csvw.writerows(records)
+			print("The CSV file created Dynamically ----verify")
+			break
+
+
+
+	
+

@@ -1,0 +1,104 @@
+			===========================================================
+						1. int
+			===========================================================
+=>'int' is one of the Pre-Defined Class and Treated as Fundamental Data Type
+=>The purpose 'int' is that "To Store Integer Data OR Integral Values OR Whole Numbers (Number without Decimal 
+     values ) such as sno,htno,acno,empno..etc
+  ----------------------------
+  Examples
+  ----------------------------			-----------------------
+  Python Instructions				Outputs
+  ----------------------------			-----------------------
+>>> a=100
+>>> print(a)---------------------------------100
+>>> print(type(a))-------------------------<class 'int'>
+>>> print(id(a))----------------------------140718856480280
+-----------------------------
+>>> print(a,type(a),id(a))--------------100 <class 'int'> 140718856480280
+-----------------------------
+>>> a=10
+>>> b=20
+>>> c=a+b
+>>> print(a,type(a))-------------------------10 <class 'int'>
+>>> print(b,type(b))-------------------------20 <class 'int'>
+>>> print(c,type(c))-------------------------30 <class 'int'>
+-----------------------------------------------------------------
+=>By using int data type, we can also store Different type of Number Systems.
+=>In Python Programming, we have 4 Types of Number Systems. They are
+			1. Decimal Number System
+			2. Binary Number System
+			3. Octal Number System
+			4. Hexa Decimal Number System
+-------------------------------------------------------------------------------------------------------------------------------------
+1. Decimal Number System
+-------------------------------------------------------------------------------------------------------------------------------------
+=>Decimal Number System is the Default Number System used by all Human Beings for their Day to Day Calculations.
+=>Decimal Number System contains the following
+		Digits: 0,1,2,3,4,5,6,7,8,9-----Total-10
+		Base: 10
+=>Base 10 Literals are called Decimal Number System Values.
+-------------------------------------------------------------------------------------------------------------------------------------
+2. Binary Number System
+-------------------------------------------------------------------------------------------------------------------------------------
+=>Binary Number System Values are Understandable by OS and Processor During Program Execution.
+=>Binary Number System contains the following
+			Digits:  0  1---Total-2
+			Base : 2
+=>Base 2 literals are called Binary Number System Values
+=>In Python Programming, To store Binary Number System Values, Binary data must be preceded with a Letter '0b' OR 
+   '0B'
+=>Syntax:   varname=0b Binary Data
+				OR
+		    varname=0B Binary Data
+-------------------
+Examples
+-------------------
+>>> a=0b101
+>>> print(a,type(a))-----------------5 <class 'int'>
+>>> a=0B10111
+>>> print(a,type(a))-----------------23 <class 'int'>
+>>> bin(5)-----------------------------'0b101'
+>>> bin(23)---------------------------'0b10111'
+>>> a=0b10102-----------------------SyntaxError: invalid digit '2' in binary literal
+NOTE:
+----------
+bin() is used converting Decimal Number System Data,Octa, Hexa Decimal Number System Data into Binary Number System Values
+Syntax:   bin(Decimal OR Octal OR Hexa Decimal)
+>>> bin(5)-----------------------------'0b101'
+>>> bin(23)---------------------------'0b10111'
+-------------------------------------------------------------------------------------------------------------------------------------
+3. Octal Number System
+-------------------------------------------------------------------------------------------------------------------------------------
+=>Binary Number System Values are Understandable by micro processor Kits During the Development of ALP OR 
+    Micro Precessor .
+=>Octal Number System contains the following
+			Digits:  0  1 2 3 4 5 6 7------Total-8
+			Base : 8
+=>Base 8 literals are called Octal Number System Values
+=>In Python Programming, To store Octal Number System Values, Octal data must be preceded with a Letter '0o' OR 
+   '0O'
+=>Syntax:   varname=0o Octal Data
+				OR
+		    varname=0O Octal Data
+Examples
+------------------
+>>> a=0o16
+>>> print(a,type(a))--------------14 <class 'int'>
+>>> a=0O123
+>>> print(a,type(a))--------------83 <class 'int'>
+>>> a=0o168-----------------------SyntaxError: invalid digit '8' in octal literal
+----------------------
+NOTE:
+---------
+oct() is used converting Decimal Number System Data,Binary, Hexa Decimal Number System Data into Octal Number System Values
+=>Syntax:  oct(Decimal OR Binary OR Hexa)
+---------------
+>>> oct(14)------------'0o16'
+>>> oct(83)------------'0o123'
+-------------------------------------------------------------------------------------------------------------------------------------
+4. Hexa Decimal Number System--Tomorrow Class Sharp------6:10PM 
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------

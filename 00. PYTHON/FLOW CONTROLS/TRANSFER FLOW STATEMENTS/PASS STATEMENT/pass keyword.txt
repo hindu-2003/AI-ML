@@ -1,0 +1,20 @@
+			===================================================
+						pass
+			===================================================
+=>here pass is keyword
+=>The pass keyword Instructs the Python Compiler and PVM in such a way that "Not to Consider Indentation Block" (OR) By pass the Indentation Block OR Ignore  the Indentation Block ".
+
+=>Syntax: 
+				if (test cond): pass
+
+=>Syntax: 
+				if (test cond): pass
+				else: pass
+
+=>Syntax: 
+				for Varname in Iterable-Object:pass
+
+
+=>Syntax: 
+				while(Test Cond):pass
+======================================x============================================

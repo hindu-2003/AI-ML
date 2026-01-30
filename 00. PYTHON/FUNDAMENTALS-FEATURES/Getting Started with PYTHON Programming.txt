@@ -1,0 +1,40 @@
+				======================================================
+					Getting Started with PYTHON Programming 
+				======================================================
+Index
+----------------------
+=>History of Python
+=>Versions of Python---MNC
+=>Downloading and Intallation Procedure of Python
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+						History of Python
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+=>The Python Programming Language Concevived(Foundation stone laid) in the year 1980.
+=>The Python Programming Language Implementation(Bring into action) started in the year 1989.
+=>The Python Programming Language Officially Released to the Industry in the year 1991 Feb
+=>The Python Programming Language Developed by "GUIDO VAN ROSSUM" (Father or Author of Python)
+=>The Python Programming Language Developed at Centrum Winsukune Informatica (CWI) Institute in the Nether 
+    Lands
+=>The Python Programming Language Officially Maintained and Managed by a Non-Commercial Organization called 
+    PYTHON SOFTWARE FOUNDATION (PSF)
+=>The official Web Site of PYTHON SOFTWARE FOUNDATION (PSF) is www.python.org
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+						Versions of Python---MNC
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+=>The Python Programming Language Contains 3 Types of Versions. They are
+
+		1. Python 1.x, Here 1 is Major Version and x Represents 0 1 2 3 4 5 6 7...etc called Minor Version
+					This Python 1.x Outdated
+			=>Python 2.x does not Support Python 1.x Completely (There no Backward Compatability)
+
+		2. Python 2.x, Here 2 is Major Version and x Represents 0 1 2 3 4 5 6 7  called Minor Version
+					This Python 2.x Outdated
+			=>Python 3.x does not Support Python 2.x Completely (There no Backward Compatability)
+		3. Python 3.x , Here 3 is Major Version and x Represents 0 1 2 3 4 5 6 7 , 8 9, 10 11 12  13 called Minor Version
+					This Python 3.x is Current Version
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+					Downloading and Intallation Procedure of Python
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Goto  www.python.org
+=>Choose downloads---- Click on python 3.12
+=>After downloading, start Installing-----etc

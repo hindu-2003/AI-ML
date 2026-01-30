@@ -1,0 +1,142 @@
+
+			=====================================================================
+				 Object Oriented  Principles or Features or Concepts in Python
+			======================================================================
+=>To say a Programming Language is Object Oriented then It has to satisfy the following Principles.
+
+			1. Classes
+			2. Objects
+			3. Data Encapsulation
+			4. Data Abstraction
+			5. Inheritance
+			6. Polymorphism
+			7. Message Passing (already discussed) 
+
+		================================================================
+					Syntax for Defining a Class in Python
+		================================================================
+
+To Define a Class in Python, we use the Following Syntax:
+
+				class <clsname>:
+					Class Level Data Members
+					def instancemethodname(self,list of formal params if any):
+						--------------------------------------------
+						Block of Statements--Performs Specific Operations
+						Specify Instnace Data Members
+						---------------------------------------------
+					@classmethod
+					def  classlevelmethodname(cls,list of formal Params if any):
+					        ---------------------------------------------------
+						Block of Statements--Performs Common Operations
+						Specify Class Level Data Members
+						---------------------------------------------
+					@staticmethod
+					def  staticmethodname(list of formal Params if any):
+					        ---------------------------------------------------
+						Block of Statements--Performs Utility / Universal Operations
+						---------------------------------------------------
+					def  __init__(self,List of formal paarms if any):
+						----------------------------------------------------
+						Block of Statements--Performs Initlization
+						----------------------------------------------------
+					def  __del__(self):
+					       -----------------------------------------------------
+					       Block of Statements--De-Allocation of Memory Space
+					       By Garbage Collector
+						----------------------------------------------------
+
+============================================================================================
+	In Side of  Class--Things Preset
+	-----------------------------------------------------
+		I. Data Members
+			a) Instance Data Members
+			b) Class Level Data Members
+		II. Methods
+			a) Instance Methods
+			b) Class Level Methods
+			c) Static Methods
+		III. Constructors
+			a) Default OR Parameter-Less Constructor
+			b) Parameterized Constructor
+		IV. Destructor (Garbage Collector)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------
+					1.Classes
+----------------------------------------------------------------------------------------------------------------------------------------------
+								
+	
+=>The purpose of Classes Concept is that "To Develop Programmer-Defined Data Type + To develop any Real Time 
+    Application."
+=>The purpose of Developing Programmer-Defined Data Type is that "To Store Customized Data + To Perform 
+    Customized Operations"
+=>To Develop Programmer-Defined Data Type by using Classes Concept, we use a key word called "class".
+=>In Python Programming, Class Names are terated as Programmer-Defined Data Types.
+=>In OOPS, All Programs Must starts with Class Names (i.e without ClassesnConcept, we can't develop any program 
+    or  Application)
+-------------------------------------------
+Definine Class
+-------------------------------------------
+=>A Class is a Collection of Data Members and Methods (Functions in OOPs are called Methods).
+=>When we define a Class, There is no memory space is created for Data Members and Methods But whose Memory 
+    Space is created when we create an Object w.r.t Class Name.
+=>What are all the Data Members and Methods Available in the Class, which are appearing as it is as a Part of Object with memory space.
+	So that Programmers can store the Data in Data Members of Object and Performs Operations on the Data Members of Object by using Methods.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			===================================================
+					Types of Data Members in Class of Python
+			===================================================
+=>In a Class of Python, we can define Two Types of Data Members. They are
+
+			1. Instance Data Members
+			2. Class Level Data Members
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. Instance Data Members
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Instance Data Members are those which are used for Storing Specific Values.
+=>Instance Data Members are those whose Memory Space Created Every Time when we create an object and hence 
+    Instance Data Members are called Object Level Data Members.
+=>Programatically,  Instance Data Members can be defined in 3 Places.
+			i) Through the Object of a Class  (classobj.Instancevariable)
+			ii)  Inside of Instance Method Definition  
+			iii) Inside of Constructor Definition
+=>Programatically,  Instance Data Members Must be accessed w.r.t Object Name or self
+	Syntax-1:  ObjectName.Instance Data Member Name
+	Syntax-2:  self.Instance Data Member Name (To be used Only Inside of Instance Method But not in Other places)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Class Level Data Members
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Class Level Data Members are those which are used for Storing Common Values for all Objects of Same Class.
+=>Class Level Data Members are those whose Memory Space Created Only Once Irrespective of Number of Objects 
+    are created w.r.t a Class
+=>Programatically  Class Level Data Members can be defined in 2 Places.
+			i) Inside of Class Definition
+			ii) In Main Program (ClassName.ClassLevel data member)
+			iii) Inside of Class Level Method Definition
+=>Programatically,  Class Level Data Members can be accessed  with the following ways
+	Syntax-1:  Class Name.Class Level Data Member Name
+	Syntax-2:  cls.Class Level Data Member Name(To be used Only Inside of Class Level Method But not in Other																						places)
+	Syntax-3:  ObjectName.Class Level Data Member Name
+	Syntax-4:  self.Class Level Data Member Name(To used Only Inside of Instance Level Method But not in Other places) 												places)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+>>> a = 10
+>>> type(a)
+<class 'int'>
+>>> type(int)
+<class 'type'>
+>>> type(type)
+<class 'type'>
+>>> type(object)
+<class 'type'>
+>>> help(object)
+Help on class object in module "builtins:" 
+
+class object
+ |  The base class of the class hierarchy.
+
+
+
+
+  the dot (.) is used as an attribute access operator. It is used to access or set an attribute of an object.

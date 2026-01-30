@@ -1,0 +1,147 @@
+			==========================================================
+					4. Logical Operators  (Comparision Operators)
+			==========================================================
+=>The purpose of Logical Operators is that "To Combine Two OR More Relational Expressions".
+=>If two OR More  Relational Expressions connected with Logical Operators then It is called Logical Expression.
+=>The Result of Logical Expression is either True OR False.
+=>The Logical Expression is also Called Compound Test Condition and whose either True OR False (bool type).
+=>In Python Programming, we have 3 Types of Logical Operators. They are given in the Following table
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+SLNO		SYMBOL			MEANING
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+1.			and				Physical ANDing
+
+2.			or				Physical ORing
+
+3.			not				--------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+1. 'and' Operator 
+***************************************************************************************************************************
+Syntax:    RelExpr1  and  RelExpr2
+=>The Functionality 'and' Operator is described in the following Truth table.
+
+				---------------------------------------------------------------------------------
+					RelExpr1    RelExpr2      RelExpr1 and RelExpr2
+				---------------------------------------------------------------------------------
+					True			False		False	
+					False		True			False
+					False		False		False
+					True			True			True
+				---------------------------------------------------------------------------------
+----------------------
+Example-1
+----------------------
+>>> True and False--------------False
+>>> False and True--------------False
+>>> False and False-------------False
+>>> True and True----------------True
+-------------------------------------
+Example-2
+-------------------------------------
+>>> 10>2 and 20>4------------------------True-------Full length Evaluation
+>>> 100>200  and 200>100--------------False-----Short Circuit Evaluation
+>>> 20>30 and 30>10 and 40>20------False-----Short Circuit Evaluation
+>>> 100>20 and 20>30 and 30>10-----False-----Short Circuit Evaluation
+>>> 10>2 and 3>2 and 2>1 and 10>6--True------Full length Evaluation
+--------------------------------------------------------------------------
+Short Circuit Evaluation in the case 'and' Operator
+--------------------------------------------------------------------------
+=>If 'and' Operator Connected with Two Or More Relational Expressions (Logical Expression) and If the Result of Initial Relational Expression is False then PVM will not Evaluate Subsequent Relational Expressions and Result of Entire Logical Expression is Considered as False. This Process of Evaluation is called Short Circuit Evaluation.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. 'or' Operator 
+****************************************************************************************************************************************************
+Syntax:     RelExpr1 or  RelExpr2
+=>The Functionality 'or' Operator is described in the following Truth table.
+
+				---------------------------------------------------------------------------------
+					RelExpr1    RelExpr2      RelExpr1 or RelExpr2
+				---------------------------------------------------------------------------------
+					True			False		True		
+					False		True			True
+					False		False		False
+					True			True			True
+				---------------------------------------------------------------------------------
+-----------------------------
+Examples
+-----------------------------
+>>> True or False------------True
+>>> False or True-----------True
+>>> False or False----------False
+>>> True or True------------True
+----------------------------------
+Example-2
+----------------------------------
+>>> 10>2 or 30>40------------------------True------Short Circuit Evaluation
+>>> 100>200 or 40>50 or 20>30-------False----Full length Evaluation
+>>> 200>300 or 30>20 or 40>50 or 50>100----True---Short Circuit Evaluation
+>>> 10>2 or 5>6 or -5>-6----True-----Short Circuit Evaluation
+--------------------------------------------------------------------------
+Short Circuit Evaluation in the case 'or Operator
+--------------------------------------------------------------------------
+=>If 'or' Operator Connected with Two Or More Relational Expressions (Logical Expression) and If the Result of Initial Relational Expression is True then PVM will not Evaluate Subsequent Relational Expressions and Result of Entire Logical Expression is Considered as True. This Process of Evaluation is called Short Circuit Evaluation.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. 'not' Operator 
+***************************************************************************************************************************
+Syntax:		not RelExpr
+------------
+=>The Functionality 'not' Operator is described in the following Truth table.
+
+				---------------------------------------------------------------------------------
+					RelExpr1    not RelExpr1      
+				---------------------------------------------------------------------------------
+					True			False			
+					False		True			
+				---------------------------------------------------------------------------------
+-------------------------
+Examples-1
+-------------------------
+>>> not True---------False
+>>> not False-------True
+-----------------------------------
+Example-2
+-----------------------------------
+>>> not 10---------------------False
+>>> not 0----------------------True
+>>> not -100------------------False
+>>> not not----------------SyntaxError: invalid syntax
+>>> not 10-10-------------True
+>>> not "Python"---------False
+>>> not ""-------------------True
+>>> not str(10-10)---------False
+>>> not "False"------------False
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Most Special Points MNC ---and   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> 100 and 200---------------------------200
+>>> 120 and -123------------------------- -123
+>>> 0 and 120----------------------------- 0
+>>> 120 and 234 and 450--------------- 450
+>>> 120 and 10-10 and 40-------------- 0
+>>> True and 300------------------------- 300
+>>> False and False and 300----------False
+>>> "Python" and "Java" and "Data Sci"---'Data Sci'
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Most Special Points MNC --or
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> 100 or 200---------------100
+>>> 0 or 200------------------200
+>>> 0 or 20 or 0------------20
+>>> False or True or 20-----True
+>>> "Python" or "Java" or " "------'Python'
+>>> "" or "Python" or ""-------------'Python'
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Most Special Points MNC -------   and   or 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> 10 and 20 or 30-----------20
+>>> 20 or 30 and 40-----------20
+>>> 10 and 20 or 30 and 40 or 50----20
+>>> "Easy" or "complex" and "Very Complex" or "Python" and "java"---'Easy'
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Most Special Points MNC --and   or   not
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> not "Easy" or "complex" and "Very Complex" or "Python" and "java"----'Very Complex'
+>>> 100 and 200 or not "Python" or not "Java" and "Not"------------200
+>>> not ("Good" and "Better" or "Best" or "Poor" and "Amazing")----False
+>>> not ("Good" and "Better" or "Best" or "Poor" and "Amazing") and "False"---False
+>>> 2 and (2>3) and 3-----------False
+======================================================================================

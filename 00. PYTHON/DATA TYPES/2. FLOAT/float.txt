@@ -1,0 +1,40 @@
+			========================================================
+						2. float
+			========================================================
+=>'float' is one of the Pre-Defined Class and Treated as Fundamental Data Type.
+=>The purpose of float data type is that "To Store Real Constant Values OR Floating Point Values (Numbers with 
+    Decimal Places) such as Percentages,CGPA,Percentile, comm,DA...etc
+=>The float data type can also use for Storing Scientific Notation Data.
+=>The General Notation of  Scientific Data is " Mantisa e Exponent ".
+=>The Evq. floating point Value for " Mantisa e Exponent " is equal to  Mantisa x 10 to power of Exponent
+=>The Advantage of Scientific Notation Data is that "To Minimize the Memory space for Big Floating point Values"
+=>The float data type never allows the programmer to Directly Represent Binary,Octal and Hexa Decimal Data But It 
+    allows only to Represent Decimal Number System Data.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Examples
+------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> a=12.34
+>>> print(a,type(a))-----------12.34 <class 'float'>
+----------------
+>>> a=10
+>>> b=1.2
+>>> c=a+b
+>>> print(a,type(a))--------10 <class 'int'>
+>>> print(b,type(b))--------1.2 <class 'float'>
+>>> print(c,type(c))--------11.2 <class 'float'>
+>>> print(22/7)-------------3.142857142857143
+--------------------------
+>>> a=3e2
+>>> print(a,type(a))-------300.0 <class 'float'>
+>>> b=100e-2
+>>> print(b,type(b))------1.0 <class 'float'>
+---------------------------------------
+>>> a=0.000000000000000000000000000000000000000000000000000000000000000005
+>>> print(a,type(a))-----------------5e-66 <class 'float'>
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Special Points
+-------------------------------------
+>>> a=0b1010.0b1111-----------------SyntaxError: invalid decimal literal
+>>> a=0o23.0b1010--------------------SyntaxError: invalid decimal literal
+>>> a=0xAC.0o23----------------------SyntaxError: invalid decimal literal
+------------------------------------

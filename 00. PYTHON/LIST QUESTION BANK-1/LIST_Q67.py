@@ -1,0 +1,19 @@
+#LIST_Q67.py
+#67. Write a Python program to find all the values in a list are greater than a specified number.
+print("Enter the values for list values with spaces ")
+try:
+	def highest():
+		list = [int(val) for val in input().split()]
+		list.sort()
+		print(list)
+		specific = int(input("Enter the specific number:"))
+		higher_values = []
+		for i in list:
+			if i>specific:
+				higher_values.append(i)
+			else:
+				print("No one in the list higher of {} value".format(specific))
+		print(higher_values)
+	highest()
+except ValueError:
+	print("Don't Enter the Alnums,symbols and strings only integers")

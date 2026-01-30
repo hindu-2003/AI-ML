@@ -1,0 +1,43 @@
+                            ===========================================================
+                                            Setter and Getter methods
+                            ===========================================================
+
+=> We can set and get Instance varaibles by using setter and getter methods
+
+Setter method
+==============
+ => Setter methods can be used set the values to the Instance varaibles.
+ => Setter methods also known as "Mutator methods"
+
+ syntax:-
+ ============
+            def setvariable(self,varaible):
+                self.varaible = varaible
+
+
+Example:
+===========
+
+            def setname(self,name):
+                self.name = name
+
+
+
+
+Getter method
+==============
+ => Getter methods can be used get the values to the Instance varaibles.
+ => Setter methods also known as "accessor methods"
+
+  syntax:-
+ ============
+            def getvariable(self):
+               return self.varaible
+
+
+Example:
+===========
+
+            def getname(self):
+                return self.name 
+

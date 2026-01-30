@@ -1,0 +1,14 @@
+#stdpick2.py
+#Student data writing to file
+import pickle
+def writes():
+	with open("stud.data","ab")as fp:
+		lst = []
+		stname = input("Enter Student Name:")
+		strollno= int(input("Enter Student Roll No:"))
+		stcrs = input("Enter student Course:")
+		lst.append(stname)
+		lst.append(strollno)
+		lst.append(stcrs)
+		st_list = pickle.dump(lst,fp)
+		print(st_list)

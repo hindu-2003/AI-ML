@@ -1,0 +1,93 @@
+			========================================================
+				Number of Approaches to Develop Python Programs
+			========================================================
+------------------------
+What is Program
+------------------------
+=>Set of Optimized Instructions is Called Program.
+=>Optimization is nothing But Either Max OR Min.
+=>In Programming Python Optimized Instructions Represents Less Time Complexity (Less Execution Time) and Less 
+   Space Complexity( Less memory space).
+=>In Python Programming Lang, We Define Set of Instructions (Program) and saved on Some File Name with an 
+    extension called .py (Stands for Python program---- FileName.py)
+--------------------------------------------------
+What is the Purpose of Program
+--------------------------------------------------
+=>The purpose of Writing Program in Language is that "To Perform an Operation / Task / Activity".
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>In Industry, we have Two Approaches to Develop Programs in Python. They are
+
+			1. By using Interactive Approach
+			2. By using Batch Mode Approach
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+1. By using Interactive Approach
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+=>In  Interactive Approach, Python programmer Can Issue One Statement at a time and gets One output at a time.
+=>Interactive Approach is useful for Testing One Instruction at a time But It is not Useful for Big Problem Solving bcoz This Approach is not allowing the programmer to save the Instructions and not able to re-use the code in Futher Applications / Prpgrams.
+------------------------------
+Example Softwares:
+-----------------------------
+					1. Python Command Prompt
+					2. Python IDLE Shell
+-------------------------------------------------------------------------------------
+Program in Interactive Approach(Python Command Prompt):
+------------------------------------------------------------------------------------
+>>> a=10
+>>> b=20
+>>> c=a+b
+>>> print(a)-----------10
+>>> print(b)-----------20
+>>> print(c)-----------30
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+2. By using Batch Mode Approach
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+=>In  Batch Mode Approach, we define set of Optmized Instructions and Saved on Some File Name with an extension called .py (FileName.py).
+=>To develop any real time application, we always go for Batch Mode.
+------------------------------
+Examples Softwares:
+------------------------------
+						1. Python IDLE Shell
+						---------------------------------------
+						Third Party IDEs Used in Real Time
+						---------------------------------------------------
+							1. PyCharm
+							2. Anaconda Jupiter NoteBook
+							3. Anaconda Spider
+							4. VS Code
+							5. Google Clob
+							6. Sublime Text...etc
+
+=>To Run the python Program from Windows Command Prompt, we use the Following Syntax
+=>Syntax:    python FileName.py
+				OR
+		     py    FileName.py
+		    
+Here "python"  and "py" are tools used for Running the python Program from Windows Command Prompt.
+----------------
+Examples:
+---------------
+E:\KVR-PYTHON-6PM\BATCH MODE>python Addopex3.py
+Enter First Value:3
+Enter Second Value:6.7
+==============================
+Val of a= 3.0
+Val of b= 6.7
+Sum= 9.7
+==============================
+			OR
+E:\KVR-PYTHON-4PM\BATCH MODE>py  Addopex3.py
+Enter First Value:3
+Enter Second Value:6.7
+==============================
+Val of a= 3.0
+Val of b= 6.7
+Sum= 9.7
+==============================
+---------------------------------------------------------------------------------------------
+
+
+							
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------

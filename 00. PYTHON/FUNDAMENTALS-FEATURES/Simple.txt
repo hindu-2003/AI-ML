@@ -1,0 +1,28 @@
+			=============================================================
+					1. Simple
+			=============================================================
+=>Python Programming Lang is One of the SIMPLE Programming Language bcoz of 3 Important Technical Factors.
+*********************************
+Factor-1
+*********************************
+=>Python Programming Provides "Rich set of MODULES". So that Python Programmer can Re-Use the Pre-Defined Code from Existing MODULES and Makes the application Effective.
+--------------------------------
+Definition of Module
+--------------------------------
+=>A Module is a Collection of Function Names, Data Members and Class Names
+=>All the Modules starts with small letters
+	Examples:  math, calendar,random,os,.....etc
+*********************************
+Factor-2: (Memory Management )
+*********************************
+=>Python Provides in-built Garbage Collector Facility. So that Garbage Collector  runs along with Regular Python Program and whose Role is to Collect OR Remove Un-Used Memory Space and Improves the Performnace of Python Based Applications.
+---------------------------------------------
+Definition of Garbage Collector
+---------------------------------------------
+=>A Garbage Collector is one of Python Background Program which is running along Regular Python Program and whose Role is to collect OR remove  Un-Used Memory Space and Improves the Performnace of Python Based Applications.
+=>Hence Garbage Collector  Takes care about Automatics Memory Management.
+*********************************
+Factor-3
+*********************************
+=>Python Programming Lang provides User-Friendly Syntaxes. So that Python Programer can develop any Program without Errors (Error-Free) in Limited span of time.
+*********************************

@@ -1,0 +1,38 @@
+
+
+			================================================
+				Library Management System
+			================================================
+				1. Add a New Book
+				2. Delete a Book
+				3. Update Book Deatils
+				4. View Book Details
+				5. View All Book Deatils
+				6. Exit
+			================================================
+				Enter Ur Choice:
+			================================================
+File System
+---------------------
+LibraryMenu.py
+	 menu()
+LibraryAdd.py
+	addbook()
+LibraryDelete.py
+       deletebook()
+LibraryUpdate.py
+	updatebook()
+LibraryView.py
+	viewbook()
+	viewallbooks()
+LibraryMainProject.py---------main Program
+--------------------------------------------------------------------
+			Table Name
+------------------------------------------------------------------
+				Library
+-----------------------------------------------------------------
+BNO		BNAME		PRICE	PUBLICATION
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+mysql> create table library(bno int primary key,bname varchar(15) not null,price real not null,publication varchar(15) not null);	
