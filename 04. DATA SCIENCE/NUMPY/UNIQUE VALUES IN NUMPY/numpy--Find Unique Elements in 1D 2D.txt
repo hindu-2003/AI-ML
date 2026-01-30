@@ -1,0 +1,189 @@
+		==========================================================================
+		    Numpy - Find unique values in a numpy array with frequency & indices | numpy.unique()
+		==========================================================================
+=>Here we  discuss how to find unique values / rows / columns in a 1D & 2D Numpy array. 
+    Also how to find their index position & frequency count using numpy.unique().
+----------------------------------
+numpy.unique()
+----------------------------------
+Python’s numpy module provides a function to find the unique elements in a numpy array i.e.
+Syntax: numpy.unique(ndarray, return_index=False, return_counts=False, axis=None)
+----------------------------------
+Arguments
+
+arr : Numpy array in which we want to find the unique values.
+return_index : optional bool flag. If True returns an array of indices of first occurrence of each unique value.
+return_counts : optional bool flag. If True returns an array of occurrence count of each unique value.
+axis : If not provided then will act on flattened array. If 0 or 1 then acts on row or column wise.
+--------------------------------------------
+It returns either one numpy array of unique values or based on arguments can also return a tuple of arrays.
+Let’s understand by some examples,
+-----------------------------------------------------
+Find Unique Values from a Numpy Array
+---------------------------------------------------------
+To find the unique values in this array pass the complete array to numpy.unique(). It will return an array of unique values i.e.
+# Get unique values in a numpy array
+arr = numpy.array([11, 11, 12, 13, 14, 15, 16, 17, 12, 13, 11, 14, 18])
+print('Original Numpy Array : ' , arr)
+
+# Get unique values from a numpy array
+uniqueValues = numpy.unique(arr)
+print('Unique Values : ',uniqueValues)
+OUTPUT:
+--------------
+Original Numpy Array :  [11 11 12 13 14 15 16 17 12 13 11 14 18]
+Unique Values :  [11 12 13 14 15 16 17 18]
+Here we passed only one argument in the numpy.unique(). Therefore it returned only an array of unique values.
+-------------------------------------------------------------------------------------------------------------------------------------
+Find Unique Values & their first index position from a Numpy Array
+-------------------------------------------------------------------------------------------------------------------------------------
+To get the indices of unique values in numpy array, pass the return_index argument in numpy.unique(), along with array i.e.
+
+arr = numpy.array([11, 11, 12, 13, 14, 15, 16, 17, 12, 13, 11, 14, 18])
+print('Original Numpy Array : ' , arr)
+# Get a tuple of unique values & their first index location from a numpy array
+uniqueValues, indicesList = numpy.unique(arr, return_index=True)
+print('Unique Values : ', uniqueValues)
+print('Indices of Unique Values : ', indicesList)
+--------------------
+Output:
+----------------
+Original Numpy Array :  [11 11 12 13 14 15 16 17 12 13 11 14 18]
+Unique Values :  [11 12 13 14 15 16 17 18]
+Indices of Unique Values :  [ 0  2  3  4  5  6  7 12]
+It returns a tuple of 2 arrays i.e.
+		1. Array of unique values
+		2. Array of first index position of unique values in first array
+--------------------------------------------------------------------------------------------------------------------------
+Now just zipped the contents of both array to get a combination of unique value and it’s index position i.e.
+
+# Zip both the arrays
+listOfUniqueValues = zip(uniqueValues, indicesList)
+print('Unique values and their first index :')
+# Iterate over the zip object
+for elem in listOfUniqueValues:
+   print(elem[0], ' at Index : ', elem[1])
+Output:
+
+Unique values and their first index :
+11  at Index :  0
+12  at Index :  2
+13  at Index :  3
+14  at Index :  4
+15  at Index :  5
+16  at Index :  6
+17  at Index :  7
+18  at Index :  12
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Get Unique Values & their frequency count from a Numpy Array
+-----------------------------------------------------------------------------------------------------------------------------------------------
+To get the frequency count of unique values in numpy array, pass the return_counts argument in numpy.unique(), along with array i.e.
+
+arr = numpy.array([11, 11, 12, 13, 14, 15, 16, 17, 12, 13, 11, 14, 18])
+print('Original Numpy Array : ' , arr)
+# Get a tuple of unique values & their frequency in numpy array
+uniqueValues, occurCount = numpy.unique(arr, return_counts=True)
+print("Unique Values : " , uniqueValues)
+print("Occurrence Count : ", occurCount)
+-------------------
+Output:
+--------------------
+Original Numpy Array :  [11 11 12 13 14 15 16 17 12 13 11 14 18]
+Unique Values :  [11 12 13 14 15 16 17 18]
+Occurrence Count :  [3 2 2 2 1 1 1 1]
+It returns a tuple of 2 arrays i.e.
+
+		1. Array of unique values
+		2. Array of frequency count of unique values in first array
+Now just zipped the contents of both array to get a combination of unique value and their frequency count i.e.
+
+# Zip both the arrays
+listOfUniqueValues = zip(uniqueValues, occurCount)
+print('Unique Values along with occurrence Count')
+# Iterate over the zip object
+for elem in listOfUniqueValues:
+   print(elem[0] , ' Occurs : ' , elem[1], ' times')
+----------------
+Output:
+----------------
+Unique Values along with occurrence Count
+11  Occurs :  3  times
+12  Occurs :  2  times
+13  Occurs :  2  times
+14  Occurs :  2  times
+15  Occurs :  1  times
+16  Occurs :  1  times
+17  Occurs :  1  times
+18  Occurs :  1  times
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Get Unique Values , frequency count & index position from a Numpy Array
+-----------------------------------------------------------------------------------------------------------------------------------------------
+We can also pass all the arguments together i.e.
+
+# Get unique values, thier frequnecy count & first index position
+uniqueValues , indicesList, occurCount= numpy.unique(arr, return_index=True, return_counts=True)
+# Zip the contents
+listOfUniqueValues = zip(uniqueValues, occurCount, indicesList)
+# Iterate over the ziiped object and display each unique value along
+# with frequency count & first index position
+for elem in listOfUniqueValues:
+   print(elem[0], ' Occurs : ', elem[1], ' times & first index is ', elem[2])
+Output:
+
+11  Occurs :  3  times & first index is  0
+12  Occurs :  2  times & first index is  2
+13  Occurs :  2  times & first index is  3
+14  Occurs :  2  times & first index is  4
+15  Occurs :  1  times & first index is  5
+16  Occurs :  1  times & first index is  6
+17  Occurs :  1  times & first index is  7
+18  Occurs :  1  times & first index is  12
+---------------------------------------------------------------------------------------------------------------------------------------------
+Find unique values, rows & columns in a 2D numpy array
+---------------------------------------------------------------------------------------------------------------------------------------------
+We can also pass a 2D numpy array to numpy.unique() to get the unique values i.e.
+
+# Create a 2D numpy array
+arr2D = numpy.array([[11, 11, 12,11] ,[ 13, 11, 12,11] , [ 16, 11, 12, 11],  [11, 11, 12, 11]])
+print('Original Array :' , arr2D)
+# Get unique values from complete 2D array
+uniqueValues = numpy.unique(arr2D)
+print('Unique Values : ', uniqueValues)
+--------------
+Output:
+------------
+Original Array :
+[[11 11 12 11]
+ [13 11 12 11]
+ [16 11 12 11]
+ [11 11 12 11]]
+Unique Values :  [11 12 13 16]
+If axis argument is not passed, 2D array will be flattened and used. To get the unique rows or columns pass axis argument i.e.
+------------------------------------------------
+Get unique Rows :
+------------------------------------------------
+# Get unique rows from complete 2D numpy array
+uniqueRows = numpy.unique(arr2D, axis=0)
+print('Unique Rows : ', uniqueRows)
+--------------------
+Output:
+--------------------
+Unique Rows : 
+[[11 11 12 11]
+ [13 11 12 11]
+ [16 11 12 11]]
+ -------------------------------------------------------
+Get unique Columns :
+--------------------------------------------------------
+# Get unique columns from  2D numpy array
+uniqueColumns = numpy.unique(arr2D, axis=1)
+print('Unique Columns : ', uniqueColumns)
+----------------------
+Output:
+----------------------
+Unique Columns : 
+[[11 11 12]
+ [11 13 12]
+ [11 16 12]
+ [11 11 12]]
+====================================================================================

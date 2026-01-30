@@ -1,0 +1,21 @@
+		======================================================================
+							1. array()
+		======================================================================
+=>Syntax1:		import numpy 
+				varname=numpy.array(object,dtype)
+
+=>Syntax2:		import numpy as np
+				varname=np.array(object,dtype)
+=>The array() is used for Converting the Traditional Python Objects into ndarray object.
+=>here varname is an object of <class, numpy.ndarray>
+------------------------------------
+The Traditional Python Objects are
+				1. int				5. str			9. list			13. dict
+				2. float				6. bytes			10. tuple			14. NoneType
+				3. bool				7. bytearray		11. set
+				4. complex			8. range			12.frozenset
+=====================================================================
+
+
+
+		

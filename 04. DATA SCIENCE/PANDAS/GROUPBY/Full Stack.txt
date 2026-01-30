@@ -1,0 +1,26 @@
+			Web DEVELOPER
+			================
+		Backend Languages
+		==========
+		1.Python===========> Data Scince,AI,ML,DL
+		2.Java
+		3.C
+		4.C++
+
+		Web Frameworks
+		===================
+		Django with restAPI
+		Flask
+
+		Frontend Languages
+		=============
+		1.HTML
+		2.CSS
+		3.JAVASCRIPT
+		4.BootStrap
+		5.React
+		Database
+		===========
+		1.Sql
+		2.MySql
+		3.OracleDB

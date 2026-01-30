@@ -1,0 +1,50 @@
+			------------------------------------------------------------------------------
+					iloc[]
+					Adding new Column Name to Data Frame
+					Data Filtering and Conditional Change 
+					Data Filtering and  updations on DataFrame object
+			---------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------------
+Understabding iloc[] ----- here start index included and stop index (Row Indices) excluded and 
+                                         Col Numbers( Column Indices)  must be used to get the data from data frame
+					 (but not column names used)
+----------------------------------------------------------------------------------------------------------------------
+1) DataFrameobj.iloc[row_number]
+2) DataFrameobj.iloc[row_number,[Col Number.........] ]
+3) DataFrameobj.iloc[row_number,[Col Number1,Col Number2............] ]
+4) DataFrameobj.iloc[row start:row stop:step]
+5) DataFrameobj.iloc[row start:row stop, Col Start: Col stop]
+6) DataFrameobj.iloc[row start:row stop:step, Col Start: Col stop:step]
+7) DataFrameobj.iloc[row start:row stop,Col Number ]
+8) DataFrameobj.iloc[ [row number1, row number-2.....] ]
+9) DataFrameobj.iloc[ row start: row stop , [Col Number1,Col Number2............] ]
+10) DataFrameobj.iloc[ : , [Col Number1,Col Number2............] ]
+===================================================================
+		Adding new Column Name to Data Frame
+===================================================================
+1)  dataframeobj['new col name']=default value
+2)  dataframeobj['new col name']=expression
+Examples:
+	df["total"]=df["english"]+df["telugu"]+df["hindi"]+df["maths"]+df["science"]+df["social"]
+	df["percent"]=round((df["total"]/600)*100,2)
+=======================================================================
+		Data Filtering and Conditional Change 
+===================================================================
+1) dataframeobj.loc[ simple condition]
+			
+			Ex:    df.loc[ df["maths"]>75 ]
+				df.loc[df["maths"]>90] [["name","maths"]]
+
+2) dataframeobj.loc[ compound condition ]
+			Ex:   df.loc[ (df["maths"]>60) & (df["maths"]<85) ]
+			Ex:  df.loc[ (df["maths"]>95) & (df["maths"]<=99),["name","maths"] ]
+===================================================================
+		Data Filtering and  updations on DataFrame object
+===================================================================
+1) dataframeobj.loc[ (simple condition), ["Col Name"] ]=Expression
+2) dataframeobj.loc[ (compund condition), ["Col Name"] ]=Expression
+	
+Ex: df.loc[ (df["percent"]>=60)  & (df["percent"]<=80),["grade"] ]="First"  # cond updation.
+========================================================================

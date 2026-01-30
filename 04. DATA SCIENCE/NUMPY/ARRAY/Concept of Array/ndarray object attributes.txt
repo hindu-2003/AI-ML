@@ -1,0 +1,13 @@
+		======================================================================
+							ndarray object attributes
+		======================================================================
+=>here ndarray object contains the following Attributes
+
+1. dtype
+2. ndim
+3. shape
+4. size
+5. itemsize
+
+				objectofndarray.attribute name
+=============================================================================

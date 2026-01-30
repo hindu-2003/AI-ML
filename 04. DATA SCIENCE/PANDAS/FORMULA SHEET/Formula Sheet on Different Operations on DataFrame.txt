@@ -1,0 +1,122 @@
+=======================================================
+		Accesssing the Data of DataFrame
+=======================================================
+1) DataFrameobj.head(no.of rows)   OR DataFrameobj.head()
+2) DataFrameobj.tail(no.of rows)  (OR) DataFrameobj.tail()
+3) DataFrameobj.describe()
+4) DataFrameobj.shape
+5) DataFrameobj [start:stop:step]
+6) DataFrameobj["Col Name"]
+7) DataFrameobj[ ["Col Name1","Col Name-2"...."Col Name-n"] ]
+8) DataFrameobj[ ["Col Name1","Col Name-2"...."Col Name-n"]] [start:stop:step]
+9) DataFrameobj.iterrows()
+===================================================
+Understabding loc[] ----- here start and stop index Included and 
+                                         Col Names can be used to get the data from data frame
+					 (but not column numbers used )
+--------------------------------------------------------------------------------------
+1) DataFrameobj.loc[row_number]
+2) DataFrameobj.loc[row_number,[Col Name,.........] ]
+3) DataFrameobj.loc[start:stop:step]
+4) DataFrameobj.loc[start:stop:step,["Col Name"] ]
+5) DataFrameobj.loc[start:stop:step,["Col Name1", Col Name-2......."] ]
+6) DataFrameobj.loc[start:stop:step,"Col Name1" : Col Name-n"] 
+7) DataFrameobj.loc[start:stop:step,"Col Name1" : Col Name-n":step] 
+------------------------------------------------------------------------------------------------------------
+
+Understabding iloc[] ----- here start index included and stop index excluded and 
+                                         Col Numbers  must be used to get the data from data frame
+					 (but not column names used)
+--------------------------------------------------------------------------------------
+1) DataFrameobj.iloc[row_number]
+2) DataFrameobj.iloc[row_number,Col Number.........] 
+3) DataFrameobj.iloc[row_number,[Col Number1,Col Number2............] ]
+3) DataFrameobj.iloc[row start:row stop, Col Start: Col stop]
+4) DataFrameobj.iloc[row start:row stop:step, Col Start: Col stop:step]
+5) DataFrameobj.iloc[row start:row stop,Col Number ]
+6) DataFrameobj.iloc[ [row number1, row number-2.....] ]
+7) DataFrameobj.iloc[ row start: row stop , [Col Number1,Col Number2............] ]
+8) DataFrameobj.iloc[ : , [Col Number1,Col Number2............] ]
+===================================================================
+		Adding new Column Name to Data Frame
+===================================================================
+1)  dataframeobj['new col name']=default value
+2)  dataframeobj['new col name']=expression
+Examples:
+df["total"]=df["english"]+df["telugu"]+df["hindi"]+df["maths"]+df["science"]+df["social"]
+df["percent"]=round((df["total"]/600)*100,2)
+=======================================================================
+		Data Filtering and Conditional Change 
+===================================================================
+1) dataframeobj.loc[ simple condition]
+			
+			Ex:    df.loc[ df["maths"]>75 ]
+				df.loc[df["maths"]>90 ,["name","maths"]]
+
+2) dataframeobj.loc[ compound condition ]
+			Ex:   df.loc[ (df["maths"]>60) & (df["maths"]<85) ]
+			Ex:  df.loc[ (df["maths"]>95) & (df["maths"]<=99),["name","maths"] ]
+===================================================================
+		Data Filtering and  updations on DataFrame object
+===================================================================
+3) dataframeobj.loc[ (compund condition), ["Col Name"] ]=Expression
+	
+Ex: df.loc[ (df["percent"]>=60)  & (df["percent"]<=80),["grade"] ]="First"  # cond updation.
+========================================================================
+		Removing Column Name from Data Frame
+=======================================================================
+1)dataframe.drop(columns="col name")
+2)dataframe.drop(columns=["col name1","colname2"....])
+3)dataframe.drop(columns="col name",inplace=True)
+4) dataframe.drop(columns=DataFrameObj.columns[Col Number])
+Example:  data = data.drop(columns=data.columns[3])
+========================================================================
+		Removing Row  from Data Frame
+=======================================================================
+1) df.drop(labels=index Value, axis=0)
+2) df.drop(labels=[index Value1,Index Value2...] , axis=0)
+Examples:  df.drop(labels=0, axis=0)  # Here  axis=0 refers to Rows 
+Examples:  df.drop(labels=4, axis=0)  # Here  axis=0 refers to Rows 
+# Delete some chosen rows by row numbers - 2nd, 10th, 30th:
+	df.drop(df.index[[1, 9, 29]])
+=======================================================================
+		sorting the data of dataframe
+=======================================================================
+1) dataframeobj.sort_values(["colname"])
+2) dataframeobj.sort_values(["colname"],ascending=False)
+===================================================================
+		knowing the duplicates  data in dataframe 
+=======================================================================
+1) dataframeobj.duplicated()---------------gives boolean result
+===================================================================
+		Removing duplicated data from dataframe
+===================================================================
+1) dataframeobj.drop_duplicates()
+2) dataframeobj.drop_duplicates(inplace=True)
+===================================================================
+===================================================================
+		Adding new Row to Data Frame
+===================================================================
+1)  dataframeobj.loc[len(DataFrame)+1]=[Val1,Val2....Val-n]
+=======================================================================
+===================================================================
+		Exporting Data Frame data to CSV File and Excel Files
+===================================================================
+To Export the DataFrame object data to the csv file
+		df.to_csv("E:\KVR-PYTHON-7AM\PANDAS\studfinaldata.csv")
+To Export the DataFrame object data to the xlsx file
+		df.to_excel("C:\\KVR\\finalresult.xlsx")
+To Export the DataFrame object data to the txt file
+		df.to_csv("E:\KVR-PYTHON-7AM\PANDAS\class_10.txt")
+			(or)
+		df.to_csv("E:\KVR-PYTHON-7AM\PANDAS\class_10.txt",index=False)
+			(OR)
+		df.to_csv("E:\KVR-PYTHON-7AM\PANDAS\class_10.txt",index=False,sep="\t")
+-----------------------------------------------------------------------------------------------------------------------
+To read the data from EXCEL into dataframe object
+	
+	dataframeobj=pandas.read_excel("Absolute path of excel file")
+Examples:
+		df=pd.read_excel("D:\\KVR\\kvr.xlsx")
+		print(df)
+--------------------------------------------------------------------------------------------------------------------------

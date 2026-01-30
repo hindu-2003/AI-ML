@@ -1,0 +1,27 @@
+
+=======================================================
+		Accesssing the Data of DataFrame
+=======================================================
+1) DataFrameobj.head(no.of rows)   OR DataFrameobj.head()
+2) DataFrameobj.tail(no.of rows)  (OR) DataFrameobj.tail()
+3) DataFrameobj.describe()
+4) DataFrameobj.shape
+5) DataFrameobj [start:stop:step]
+6) DataFrameobj["Col Name"]
+7) DataFrameobj[ ["Col Name1","Col Name-2"...."Col Name-n"] ]
+8) DataFrameobj[ ["Col Name1","Col Name-2"...."Col Name-n"]] [start:stop:step]
+9) DataFrameobj [start:stop:step][ ["Col Name1","Col Name-2"...."Col Name-n"] ]
+10) DataFrameobj.iterrows()
+===================================================
+Understabding loc[] ----- here start and stop index (Row Indices) Included and 
+                                         Col Names can be used to get the data from data frame
+					 (but not column Indices used )
+--------------------------------------------------------------------------------------
+1) DataFrameobj.loc[row_number]
+2) DataFrameobj.loc[row_number,[Col Name,.........] ]
+3) DataFrameobj.loc[start:stop:step]
+4) DataFrameobj.loc[start:stop:step,["Col Name"] ]
+5) DataFrameobj.loc[start:stop:step,["Col Name1", Col Name-2......."] ]
+6) DataFrameobj.loc[start:stop:step,"Col Name1" : Col Name-n"] 
+7) DataFrameobj.loc[start:stop:step,"Col Name1" : Col Name-n":step] 
+------------------------------------------------------------------------------------------------------------------------
