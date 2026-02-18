@@ -1,0 +1,252 @@
+﻿FLASK Introduction
+------------------
+
+Importing flask module in the project is mandatory. 
+
+An object of Flask class is our WSGI application.
+
+Flask constructor takes the name of current module (__name__) as argument.
+
+The route() function of the Flask class is a decorator, which tells the application which URL should call the associated function.
+
+app.route(rule, options)
+
+The rule parameter represents URL binding with the function.
+
+
+CODE
+----
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+   return 'Hello World’
+
+if __name__ == '__main__':
+   app.debug = True
+   app.run()
+   
+ ---
+ 
+Finally the run() method of Flask class runs the application on the local development server.
+
+app.run(host, port, debug, options)
+
+
+The above given Python script is executed from Python shell.
+
+Python Hello.py
+A message in Python shell informs you that
+
+* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+Open the above URL (localhost:5000) in the browser. ‘Hello World’ message will be displayed on it.
+
+
+A Flask application is started by calling the run() method. 
+
+However, while the application is under development, it should be restarted manually for each change in the code. 
+
+To avoid this inconvenience, enable debug support.
+
+Flask – Routing
+---------------
+
+Modern web frameworks use the routing technique to help a user remember application URLs. 
+
+It is useful to access the desired page directly without having to navigate from the home page.
+
+The route() decorator in Flask is used to bind URL to a function. For example −
+
+@app.route(‘/hello’)
+def hello_world():
+   return ‘hello world’
+Here, URL ‘/hello’ rule is bound to the hello_world() function. 
+
+As a result, if a user visits http://localhost:5000/hello URL, the output of the hello_world() function will be rendered in the browser.
+
+Flask – Variable Rules
+----------------------
+
+It is possible to build a URL dynamically, by adding variable parts to the rule parameter. 
+
+This variable part is marked as <variable-name>. 
+
+It is passed as a keyword argument to the function with which the rule is associated.
+
+In the following example, the rule parameter of route() decorator contains <name> variable part attached to URL ‘/hello’.
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/hello/<name>')
+def hello_name(name):
+   return 'Hello %s!' % name
+
+if __name__ == '__main__':
+   app.run(debug = True)
+
+
+open the browser and enter URL http://127.0.0.1:5000/hello/rama
+
+
+In addition to the default string variable part, rules can be constructed using for int/float also.
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/blog/<int:postID>')
+def show_blog(postID):
+   return 'Blog Number %d' % postID
+
+@app.route('/rev/<float:revNo>')
+def revision(revNo):
+   return 'Revision Number %f' % revNo
+
+if __name__ == '__main__':
+   app.run()
+
+
+http://localhost:5000/blog/100
+
+http://localhost:5000/rev/1.1
+
+
+Flask – URL Building
+---------------------
+
+The url_for() function is very useful for dynamically building a URL for a specific function. 
+
+The function accepts the name of a function as first argument, and one or more keyword arguments, each corresponding to the variable part of URL.
+
+
+from flask import Flask, redirect, url_for
+app = Flask(__name__)
+
+@app.route('/admin')
+def hello_admin():
+   return 'Hello Admin'
+
+@app.route('/guest/<guest>')
+def hello_guest(guest):
+   return 'Hello %s as Guest' % guest
+
+@app.route('/user/<name>')
+def hello_user(name):
+   if name =='admin':
+      return redirect(url_for('hello_admin'))
+   else:
+      return redirect(url_for('hello_guest',guest = name))
+
+if __name__ == '__main__':
+   app.run(debug = True)
+
+
+http://localhost:5000/user/admin
+
+http://localhost:5000/user/mvl
+
+
+Flask – HTTP methods
+----------------------
+
+Http protocol is the foundation of data communication in world wide web. Different methods of data retrieval from specified URL are defined in this protocol.
+
+GET : Sends data in unencrypted form to the server. Most common method.
+
+POST: Used to send HTML form data to server. 
+      Data received by POST method is not cached by server.
+	  
+	  
+By default, the Flask route responds to the GET requests. 
+
+However, this preference can be altered by providing methods argument to route() decorator.
+
+login.html
+-----------
+<html>
+   <body>
+      <form action = "http://localhost:5000/login" method = "post">
+         <p>Enter Name:</p>
+         <p><input type = "text" name = "nm" /></p>
+         <p><input type = "submit" value = "submit" /></p>
+      </form>
+   </body>
+</html>
+
+
+postex.py
+----------
+
+from flask import Flask, redirect, url_for, request
+app = Flask(__name__)
+
+@app.route('/success/<name>')
+def success(name):
+   return 'welcome %s' % name
+
+@app.route('/login',methods = ['POST', 'GET'])
+def login():
+   if request.method == 'POST':
+      user = request.form['nm']
+      return redirect(url_for('success',name = user))
+   else:
+      user = request.args.get('nm')
+      return redirect(url_for('success',name = user))
+
+if __name__ == '__main__':
+   app.run(debug = True)
+   
+After the development server starts running, open login.html in the browser, enter name in the text field and click Submit.
+
+
+Flask – Templates
+-----------------
+It is possible to return the output of a function bound to a certain URL in the form of HTML.
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+   return '<html><body><h1>Hello World</h1></body></html>'
+
+if __name__ == '__main__':
+   app.run(debug = True)
+   
+However, generating HTML content from Python code is cumbersome.
+
+This is where one can take advantage of Jinja2 template engine, on which Flask is based. 
+
+Instead of returning hardcode HTML from the function, a HTML file can be rendered by the render_template() function.
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+   return render_template(‘hello.html’)
+
+if __name__ == '__main__':
+   app.run(debug = True)
+   
+   
+http://localhost:5000/hello/mvl
+
+Application folder
+Hello.py
+templates
+     hello.html
+
+
+The jinja2 template engine uses the following delimiters for escaping from HTML.
+
+{% ... %} for Statements
+{{ ... }} for Expressions to print to the template output
+{# ... #} for Comments not included in the template output
+# ... ## for Line Statements
+
+
+Flask – Sending Form Data to Template
+--------------------------------------
+
