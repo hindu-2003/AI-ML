@@ -1,0 +1,56 @@
+Here is the categorized list of grocery items:
+
+**Produce:**
+• Apples
+• Bananas
+• Bell Peppers
+• Broccoli
+• Carrots
+• Lettuce
+• Onions
+• Potatoes
+• Spinach
+• Strawberries
+• Tomatoes
+
+**Dairy:**
+• Butter
+• Cheese
+• Eggs
+• Milk
+• Yogurt
+
+**Meat/Fish/Poultry:**
+• Chicken Breast
+• Ground Beef
+• Salmon
+• Shrimp
+• Sausages
+
+**Bakery:**
+• Bread
+
+**Pantry:**
+• Almonds
+• Cereal
+• Flour
+• Granola Bars
+• Oatmeal
+• Pasta
+• Rice
+• Sugar
+
+**Beverages:**
+• Coffee
+• Orange Juice
+• Soda
+• Tea
+
+**Condiments/Honey/Sweeteners:**
+• Honey
+• Jam
+• Peanut Butter
+
+**Oils/Spices:**
+• Garlic
+• Olive Oil
